@@ -1,0 +1,82 @@
+nome_tabela;nome_atributo;tipo_dado;quantidade_caracteres;indicador_obrigatorio;valor_permitido;indicador_chave_primaria;indicador_chave_estrangeira;descricao_atributo
+Dimensao_colaborador;surrogate_key_colaborador;NUMERIC;5;S;Irrestrito;S;N;Atributo artificial sequencial identificador de colaborador
+Dimensao_colaborador;codigo_matricula_colaborador;VARCHAR;5;S;Irrestrito;N;N;código de matrícula do colaborador
+Dimensao_colaborador;nome_colaborador;VARCHAR;40;S;Irrestrito;N;N;Nome do colaborador
+Dimensao_colaborador;tipo_contrato_trabalho;VARCHAR;3;S;CLT, PJ;N;N;Tipo do contrato de trabalho
+Dimensao_colaborador;codigo_cargo_colaborador;VARCHAR;3;S;Irrestrito;N;N;código de cargo do colaborador
+Dimensao_colaborador;data_nascimento_colaborador;DATE;N/A;S;Irrestrito;N;N;Data de nascimento do colaborador
+Dimensao_colaborador;nome_cidade_colaborador;VARCHAR;30;S;Irrestrito;N;N;Nome da cidade do colaborador
+Dimensao_colaborador;numero_cpf_colaborador;VARCHAR;11;S;Irrestrito;N;N;Número do CPF do colaborador
+Dimensao_colaborador;endereco_email_colaborador;VARCHAR;40;S;Irrestrito;N;N;Endereço de email do colabrador
+Dimensao_colaborador;data_admissao_colaborador;DATE;N/A;S;Irrestrito;N;N;Data de admissão do colaborador
+Dimensao_calendario;ano_mes_calendario;NUMERIC;6;S;Irrestrito;S;N;Ano e mês de referencia
+Dimensao_calendario;numero_ano_calendario;NUMERIC;4;S;Irrestrito;N;N;Número do ano de referância
+Dimensao_calendario;numero_mes_calendario;NUMERIC;2;S;Irrestrito;N;N;Número mês de referência
+Dimensao_calendario;nome_mes_calendario;VARCHAR;18;S;Irrestrito;N;N;Nome do mês de referância
+Dimensao_calendario;dias_uteis_mes_calendario;NUMERIC;2;S;Irrestrito;N;N;Dias úteis do mês de referência
+Dimensao_cargo;codigo_cargo;VARCHAR;3;S;Irrestrito;S;N;código de cargo do colaborador
+Dimensao_cargo;descricao_cargo;VARCHAR;40;S;Cientista de Dados, Analista de Dados, Engenheiro de Dados, Arquiteto de Soluções, Scrum Master, Agile Coach, Analista Funcional, Product Owner, Analista Desenvolvedor, Especialista Desenvolvedor, Consultor Cybersecurity, Consultor Comercial, Estagiário, Gerente Técnico, Gerente Comercial, Designer UX/UI, Analista de QA, Analista de Infraestrutura, Analista de Cloud, Especialistade Cloud;N;N;Descrição do cargo
+Dimensao_cargo;valor_custo_hora;NUMERIC;5,2;S;Irrestrito;N;N;Valor do custo hora
+Dimensao_cargo;valor_custo_dia;NUMERIC;5,2;S;Irrestrito;N;N;Valor do custo dia (Valor do custo hora * 8)
+Dimensao_cliente;surrogate_key_cliente;NUMERIC;5;S;Irrestrito;S;N;Atributo artificial sequencial identificador de cliente
+Dimensao_cliente;nome_cliente;VARCHAR;50;S;Irrestrito;N;N;Nome fantasia do cliente
+Dimensao_cliente;codigo_cnpj_cliente;NUMERIC;14;S;Irrestrito;N;N;código CNPJ do cliente
+Dimensao_cliente;endereco_email_cliente;VARCHAR;40;S;Irrestrito;N;N;endereço email do cliente
+Dimensao_cliente;numero_telefone_cliente;NUMERIC;10;S;Irrestrito;N;N;Número de telefone do cliente
+Dimensao_cliente;data_cadastro_cliente;DATE;N/A;S;Irrestrito;N;N;Data de cadastro do cliente
+Dimensao_projeto;surrogate_key_projeto;NUMERIC;5;S;Irrestrito;S;N;Atributo artificial sequencial identificador de projeto
+Dimensao_projeto;codigo_projeto;NUMERIC;5;S;Irrestrito;S;N;código identificador do projeto
+Dimensao_projeto;descricao_projeto;VARCHAR;60;S;Irrestrito;N;N;Descrição eto projetos
+Dimensao_projeto;codigo_matricula_gestor_projeto;VARCHAR;5;S;Irrestrito;N;N;código de matrícula do gestor do projeto
+Dimensao_projeto;nome_gestor_projeto;VARCHAR;40;S;Irrestrito;N;N;Nome do gerente do projeto
+Dimensao_projeto;valor_receita_projeto;NUMERIC;9,2;S;Irrestrito;N;N;Valor da receita do projeto
+Dimensao_projeto;valor_custo_projeto;NUMERIC;9,2;S;Irrestrito;N;N;Valor do custo do projeto
+Dimensao_projeto;data_inicio_projeto;DATE;N/A;S;Irrestrito;N;N;Data de início do projeto
+Dimensao_projeto;data_fim_projeto;DATE;N/A;S;Irrestrito;N;N;Data de encerramento do projeto
+Dimensao_projeto;numero_versao_projeto;NUMERIC;2;S;Irrestrito;N;N;Número da versão do projeto
+Dimensao_despesas_projeto;surrogate_key_despesa;NUMERIC;2;S;Irrestrito;S;N;Atributo artificial sequencial identificador de despesa
+Dimensao_despesas_projeto;tipo_despesa;VARCHAR;20;S;Hospedagem, Passagem, Quilometragem, Refeição, Outros;N;N;Tipo de despesa
+Dimensao_segmento_mercado;surrogate_key_segmento_mercado;NUMERIC;2;S;Irrestrito;S;N;Atributo artificial sequencial identificador de segmento de mercado
+Dimensao_segmento_mercado;nome_segmento_mercado_consolidado;VARCHAR;30;S;Enterprise, Financial Services, Public Sector, Healt Care;N;N;Nome do segmento de mercado consolidado
+Dimensao_segmento_mercado;nome_segmento_mercado_detalhado;VARCHAR;30;S;Energy & Utilities, Telco & Media, Mobility, Industry, Financial Services, Public Administration, Healt Care;N;N;Nome do segmento de mercado detalhado
+Dimensao_filial;surrogate_key_filial;NUMERIC;2;S;Irrestrito;S;N;Atributo artificial sequencial identificador de filial
+Dimensao_filial;nome_filial;VARCHAR;20;S;Irrestrito;N;N;Nome da filial 
+Dimensao_filial;endereco_filial;VARCHAR;40;S;Irrestrito;N;N;Endereço da filial
+Dimensao_filial;nome_cidade_filial;VARCHAR;20;S;São Paulo, Belo Horizonte, Rio de Janeiro;N;N;Nome da cidade da filial
+Dimensao_filial;nome_estado_filial;VARCHAR;20;S;SP, BH, RJ;N;N;Nome do estado da filial
+Dimensao_filial;codigo_cnpj_filial;NUMERIC;14;S;Irrestrito;N;N;código CNPJ da filial
+Dimensao_filial;endereco_email_filial;VARCHAR;40;S;Irrestrito;N;N;Endereço de email da filial
+Dimensao_filial;numero_telefone_filial;NUMERIC;10;S;Irrestrito;N;N;Número de telefone da filial
+Fato_projeto_planejado;surrogate_key_projeto_planejado;NUMERIC;10;S;Irrestrito;S;N;Atributo artificial sequencial identificador de projeto planejado
+Fato_projeto_planejado;ano_mes_calendario;NUMERIC;6;S;Irrestrito;N;S;Ano e mês de referencia
+Fato_projeto_planejado;codigo_cargo;VARCHAR;3;S;Irrestrito;N;S;código de cargo do colaborador
+Fato_projeto_planejado;surrogate_key_cliente;NUMERIC;5;S;Irrestrito;N;S;Atributo artificial sequencial identificador de cliente
+Fato_projeto_planejado;surrogate_key_segmento_mercado;NUMERIC;2;S;Irrestrito;N;S;Atributo artificial sequencial identificador de segmento de mercado
+Fato_projeto_planejado;surrogate_key_despesa;NUMERIC;2;S;Irrestrito;N;S;Atributo artificial sequencial identificador de despesa
+Fato_projeto_planejado;data_carga;TIMESTAMP;N/A;S;Irrestrito;N;N;Data de carga dos dados na tabela Fato de projeto planejado
+Fato_projeto_planejado;quantidade_trabalho_hora_normal;NUMERIC;2,2;S;Irrestrito;N;N;Quantidade horas normais de trabalho
+Fato_projeto_planejado;quantidade_trabalho_hora_extra;NUMERIC;2,2;S;Irrestrito;N;N;Quantidade horas extras de trabalho
+Fato_projeto_planejado;valor_despesa;NUMERIC;5,2;S;Irrestrito;N;N;Valor das despesas
+Fato_projeto_planejado;codigo_projeto;NUMERIC;5;S;Irrestrito;N;S;código identificador do projeto
+Fato_projeto_realizado;surrogate_key_projeto_realizado;NUMERIC;10;S;Irrestrito;S;N;Atributo artificial sequencial identificador de projeto realizado
+Fato_projeto_realizado;ano_mes_calendario;NUMERIC;6;S;Irrestrito;N;S;Ano e mês de referencia
+Fato_projeto_realizado;surrogate_key_colaborador;NUMERIC;5;S;Irrestrito;N;S;Atributo artificial sequencial identificador de colaborador
+Fato_projeto_realizado;codigo_cargo;VARCHAR;3;S;Irrestrito;N;S;código de cargo do colaborador
+Fato_projeto_realizado;surrogate_key_cliente;NUMERIC;5;S;Irrestrito;N;S;Atributo artificial sequencial identificador de cliente
+Fato_projeto_realizado;surrogate_key_segmento_mercado;NUMERIC;2;S;Irrestrito;N;S;Atributo artificial sequencial identificador de segmento de mercado
+Fato_projeto_realizado;surrogate_key_filial;NUMERIC;2;S;Irrestrito;N;S;Atributo artificial sequencial identificador de filial
+Fato_projeto_realizado;surrogate_key_despesa;NUMERIC;2;S;Irrestrito;N;S;Atributo artificial sequencial identificador de despesa
+Fato_projeto_realizado;data_carga;TIMESTAMP;N/A;S;Irrestrito;N;N;Data de carga dos dados na tabela Fato de projeto realizado
+Fato_projeto_realizado;indicador_tipo_hora_trabalhada;VARCHAR;2;S;Irrestrito;N;N;Indicador tipo de horas trabalhada
+Fato_projeto_realizado;quantidade_horas_trabalhadas;NUMERIC;2,2;S;Irrestrito;N;N;Quantidade horas trabalhadas
+Fato_projeto_realizado;valor_despesa;NUMERIC;5,2;S;Irrestrito;N;N;Valor das despesas
+Fato_projeto_realizado;codigo_projeto;NUMERIC;5;S;Irrestrito;N;S;código identificador do projeto
+Dicionario_dados;nome_tabela;VARCHAR;30;S;Irrestrito;N;N;Nome da tabela do banco de dados
+Dicionario_dados;nome_atributo;VARCHAR;30;S;Irrestrito;N;N;Nome do atributo do banco de dados
+Dicionario_dados;tipo_dado;VARCHAR;20;S;Irrestrito;N;N;Tipo de dado
+Dicionario_dados;quantidade_caracteres;VARCHAR;3;S;Irrestrito;N;N;Quantidade caracteres
+Dicionario_dados;indicador_obrigatorio;VARCHAR;3;S;Irrestrito;N;N;Indicador obrigatório
+Dicionario_dados;valor_permitido;VARCHAR;999;S;Irrestrito;N;N;Valor permitido
+Dicionario_dados;indicador_chave_primaria;VARCHAR;3;S;Irrestrito;N;N;Indicador chave primária
+Dicionario_dados;indicador_chave_estrangeira;VARCHAR;3;S;Irrestrito;N;N;Indicador chave estrangeira
+Dicionario_dados;descricao_atributo;VARCHAR;999;S;Irrestrito;N;N;Descrição dos atributos

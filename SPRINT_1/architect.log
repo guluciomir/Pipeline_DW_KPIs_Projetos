@@ -1,0 +1,2564 @@
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+505  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+585  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+585  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+632  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+22347 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+532386 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+2035317 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE Dimensao_cliente (
+                codigo_cliente NUMERIC(5) IDENTITY NOT NULL,
+                nome_cliente VARCHAR(50) NOT NULL,
+                codigo_cnpj_cliente NUMERIC(14) NOT NULL,
+                endereco_email_cliente VARCHAR(40) NOT NULL,
+                numero_telefone_cliente NUMERIC(10) NOT NULL,
+                data_cadastro_cliente DATETIME NOT NULL,
+                CONSTRAINT Dimensao_cliente_pk PRIMARY KEY (codigo_cliente)
+)
+2035317 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cargo (
+                codigo_cargo NUMERIC(3) IDENTITY NOT NULL,
+                descricao_cargo VARCHAR(40) NOT NULL,
+                valor_custo_hora NUMERIC(5,2) NOT NULL,
+                valor_custo_dia NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Dimensao_cargo_pk PRIMARY KEY (codigo_cargo)
+)
+2035317 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_tipo_projeto (
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                descricao_tipo_projeto VARCHAR(50) NOT NULL,
+                CONSTRAINT Dimensao_tipo_projeto_pk PRIMARY KEY (codigo_tipo_projeto)
+)
+2035317 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_centro_custo (
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                descricao_centro_custo VARCHAR(30) NOT NULL,
+                codigo_centro_custo_pai VARCHAR(10) NOT NULL,
+                codigo_matricula_gestor_centro_custo VARCHAR(5) NOT NULL,
+                nome_gestor_centro_custo VARCHAR(40) NOT NULL,
+                CONSTRAINT Dimensao_centro_custo_pk PRIMARY KEY (codigo_centro_custo)
+)
+2035317 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_projeto (
+                surrogate_key_projeto VARCHAR(10) IDENTITY NOT NULL,
+                codigo_projeto NUMERIC(10) NOT NULL,
+                descricao_projeto VARCHAR(60) NOT NULL,
+                valor_receita_projeto NUMERIC(9,2) NOT NULL,
+                valor_custo_projeto NUMERIC(9,2) NOT NULL,
+                valor_margem_projeto NUMERIC(9,2) NOT NULL,
+                percentual_margem_projeto NUMERIC(9,2) NOT NULL,
+                data_inicio_projeto DATETIME NOT NULL,
+                data_fim_projeto DATETIME NOT NULL,
+                numero_versao_projeto NUMERIC(2) NOT NULL,
+                CONSTRAINT Dimensao_projeto_pk PRIMARY KEY (surrogate_key_projeto)
+)
+2035317 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_filial (
+                codigo_filial NUMERIC(2) IDENTITY NOT NULL,
+                nome_filial VARCHAR(20) NOT NULL,
+                endereco_filial VARCHAR(40) NOT NULL,
+                nome_cidade_filial VARCHAR(20) NOT NULL,
+                nome_estado_filial VARCHAR(20) NOT NULL,
+                codigo_cnpj_filial NUMERIC(14) NOT NULL,
+                endereco_email_filial VARCHAR(40) NOT NULL,
+                numero_telefone_filial NUMERIC(10) NOT NULL,
+                CONSTRAINT Dimensao_filial_pk PRIMARY KEY (codigo_filial)
+)
+2035317 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_segmento_mercado (
+                codigo_segmento_mercado NUMERIC(2) IDENTITY NOT NULL,
+                nome_segmento_mercado_consolidado VARCHAR(30) NOT NULL,
+                nome_segmento_mercado_detalhado VARCHAR(30) NOT NULL,
+                CONSTRAINT Dimensao_segmento_mercado_pk PRIMARY KEY (codigo_segmento_mercado)
+)
+2035317 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dim_colaborador (
+                surrogate_key_colaborador NUMERIC(5) IDENTITY NOT NULL,
+                codigo_matricula_colaborador VARCHAR(5) NOT NULL,
+                nome_colaborador VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador VARCHAR NOT NULL,
+                data_nascimento_colaborador DATETIME NOT NULL,
+                nome_cidade_coaborador VARCHAR(30) NOT NULL,
+                numero_cpf_colaborador VARCHAR(11) NOT NULL,
+                endereco_email_colaborador VARCHAR(40) NOT NULL,
+                data_admissao_colaborador DATETIME NOT NULL,
+                CONSTRAINT Dim_colaborador_pk PRIMARY KEY (surrogate_key_colaborador)
+)
+2035317 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :8
+2546426 [Objects-Adder] INFO  ca.sqlpower.architect.swingui.PlayPen  - AddObjectsTask starting on thread Objects-Adder
+2546426 [Objects-Adder] INFO  ca.sqlpower.architect.swingui.PlayPen  - AddObjectsTask done
+2546442 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - adding table OCWPRD_DAC_CALENDARIO (TABLE)
+2560137 [Objects-Adder] INFO  ca.sqlpower.architect.swingui.PlayPen  - AddObjectsTask starting on thread Objects-Adder
+2560137 [Objects-Adder] INFO  ca.sqlpower.architect.swingui.PlayPen  - AddObjectsTask done
+2560137 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - adding table OCWPRD_DAC_CLD_OCWPRD_FTP_RAZ_CNT_PCR_fk1 (TABLE)
+2560137 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - adding table OCWPRD_DMA_CLD_OCWPRD_FTN_COB_fk (TABLE)
+2560137 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - adding table OCWPRD_DAC_CLD_OCWPRD_FTP_RAZ_CNT_PCR_fk (TABLE)
+2589066 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+2589066 [AWT-EventQueue-0] ERROR ca.sqlpower.architect.swingui.ExceptionHandler  - Uncaught exception
+java.lang.RuntimeException: java.awt.dnd.InvalidDnDOperationException: No drop current
+	at ca.sqlpower.architect.swingui.PlayPen.addTransferable(PlayPen.java:2311)
+	at ca.sqlpower.architect.swingui.PlayPen$PlayPenDropListener.drop(PlayPen.java:2175)
+	at java.awt.dnd.DropTarget.drop(Unknown Source)
+	at sun.awt.dnd.SunDropTargetContextPeer.processDropMessage(Unknown Source)
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchDropEvent(Unknown Source)
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchEvent(Unknown Source)
+	at sun.awt.dnd.SunDropTargetEvent.dispatch(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processDropTargetEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.awt.dnd.InvalidDnDOperationException: No drop current
+	at sun.awt.dnd.SunDropTargetContextPeer.getTransferData(Unknown Source)
+	at sun.awt.datatransfer.TransferableProxy.getTransferData(Unknown Source)
+	at java.awt.dnd.DropTargetContext$TransferableProxy.getTransferData(Unknown Source)
+	at ca.sqlpower.architect.swingui.PlayPen.addTransferable(PlayPen.java:2276)
+	... 33 more
+2589130 [AWT-EventQueue-0] INFO  ca.sqlpower.util.ExceptionReport  - Posting error report to SQL Power at URL <http://bugs.sqlpower.ca/architect/postReport>
+2592290 [AWT-EventQueue-0] ERROR ca.sqlpower.util.ExceptionReport  - Couldn't send exception report to <"http://bugs.sqlpower.ca/architect/postReport">
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at ca.sqlpower.util.ExceptionReport.send(ExceptionReport.java:283)
+	at ca.sqlpower.architect.swingui.ExceptionHandler.handleAndReport(ExceptionHandler.java:117)
+	at ca.sqlpower.architect.swingui.ExceptionHandler.uncaughtException(ExceptionHandler.java:74)
+	at java.lang.ThreadGroup.uncaughtException(Unknown Source)
+	at java.lang.ThreadGroup.uncaughtException(Unknown Source)
+	at java.awt.EventDispatchThread.processException(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+2604487 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+2604488 [AWT-EventQueue-0] ERROR ca.sqlpower.architect.swingui.ExceptionHandler  - Uncaught exception
+java.lang.RuntimeException: java.awt.dnd.InvalidDnDOperationException: No drop current
+	at ca.sqlpower.architect.swingui.PlayPen.addTransferable(PlayPen.java:2311)
+	at ca.sqlpower.architect.swingui.PlayPen$PlayPenDropListener.drop(PlayPen.java:2175)
+	at java.awt.dnd.DropTarget.drop(Unknown Source)
+	at sun.awt.dnd.SunDropTargetContextPeer.processDropMessage(Unknown Source)
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchDropEvent(Unknown Source)
+	at sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher.dispatchEvent(Unknown Source)
+	at sun.awt.dnd.SunDropTargetEvent.dispatch(Unknown Source)
+	at java.awt.Component.dispatchEventImpl(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.processDropTargetEvent(Unknown Source)
+	at java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+	at java.awt.Container.dispatchEventImpl(Unknown Source)
+	at java.awt.Window.dispatchEventImpl(Unknown Source)
+	at java.awt.Component.dispatchEvent(Unknown Source)
+	at java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.awt.EventQueue.access$500(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.awt.EventQueue$3.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.awt.EventQueue$4.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+Caused by: java.awt.dnd.InvalidDnDOperationException: No drop current
+	at sun.awt.dnd.SunDropTargetContextPeer.getTransferData(Unknown Source)
+	at sun.awt.datatransfer.TransferableProxy.getTransferData(Unknown Source)
+	at java.awt.dnd.DropTargetContext$TransferableProxy.getTransferData(Unknown Source)
+	at ca.sqlpower.architect.swingui.PlayPen.addTransferable(PlayPen.java:2276)
+	... 33 more
+2604523 [AWT-EventQueue-0] INFO  ca.sqlpower.util.ExceptionReport  - Posting error report to SQL Power at URL <http://bugs.sqlpower.ca/architect/postReport>
+2607536 [AWT-EventQueue-0] ERROR ca.sqlpower.util.ExceptionReport  - Couldn't send exception report to <"http://bugs.sqlpower.ca/architect/postReport">
+java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.<init>(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.http.HttpClient.New(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source)
+	at ca.sqlpower.util.ExceptionReport.send(ExceptionReport.java:283)
+	at ca.sqlpower.architect.swingui.ExceptionHandler.handleAndReport(ExceptionHandler.java:117)
+	at ca.sqlpower.architect.swingui.ExceptionHandler.uncaughtException(ExceptionHandler.java:74)
+	at java.lang.ThreadGroup.uncaughtException(Unknown Source)
+	at java.lang.ThreadGroup.uncaughtException(Unknown Source)
+	at java.awt.EventDispatchThread.processException(Unknown Source)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.awt.EventDispatchThread.run(Unknown Source)
+30462942 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+35457996 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+38207554 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+38207554 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+38207554 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+38207554 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+38219066 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+38219066 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+38219066 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+38219066 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+38967065 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+38972020 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+38980220 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+39268275 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+39467768 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+39467768 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+39467768 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+39467768 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+39467768 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+39467768 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+39587119 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+39587119 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+40025043 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+40029416 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+40082956 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+40087381 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+40090279 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+40217230 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.DBTree  - DBTree: exporting list of DnD-type tree paths
+40220012 [Objects-Adder] INFO  ca.sqlpower.architect.swingui.PlayPen  - AddObjectsTask starting on thread Objects-Adder
+40220012 [Objects-Adder] INFO  ca.sqlpower.architect.swingui.PlayPen  - AddObjectsTask done
+40220012 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - adding table TABELA_CAPTURA_APONTAMENTO_HORAS_1 (TABLE)
+40724829 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@6d1ecd3b]
+41416910 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+41416910 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+41416910 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+41416910 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+41416910 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+41416910 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+41416925 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+41416925 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+41416925 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+41416925 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+41729963 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+41729963 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+41729963 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+41729963 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+41729963 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+41729963 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+41909570 [AWT-EventQueue-0] ERROR ca.sqlpower.architect.swingui.KettleDataSourceOptionsPanel  -  The map is: {}
+42277465 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+42277465 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE TABELA_CAPTURA_PLANEJAMENTO_HORAS (
+                surrogate_key_captura_planejamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                mes_planejado NUMERIC(2) NOT NULL,
+                ano_planejado NUMERIC(2) NOT NULL,
+                codigo_centro_custo_planejado VARCHAR(10) NOT NULL,
+                descricao_centro_custo_planejado VARCHAR(30) NOT NULL,
+                codigo_projeto_planejado NUMERIC(10) NOT NULL,
+                codigo_cliente_planejado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_planejado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT TABELA_CAPTURA_PLANEJAMENTO_HORAS_pk PRIMARY KEY (surrogate_key_captura_planejamento_horas)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE TABELA_CAPTURA_APONTAMENTO_HORAS (
+                surrogate_key_captura_apontamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                data_apontamento DATETIME NOT NULL,
+                codigo_matricula_colaborador_apontado VARCHAR(5) NOT NULL,
+                nome_colaborador_apontado VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho_apontado VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                codgo_filial_apontada NUMERIC(2) NOT NULL,
+                nome_filial_apontada VARCHAR(20) NOT NULL,
+                codigo_centro_custo_apontado VARCHAR(10) NOT NULL,
+                descricao_centro_custo_apontado VARCHAR(30) NOT NULL,
+                codigo_projeto_apontado NUMERIC(10) NOT NULL,
+                codigo_cliente_apontado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_apontado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                indicador_tipo_hora_trabalhada_apontada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT TABELA_CAPTURA_APONTAMENTO_HORAS_pk PRIMARY KEY (surrogate_key_captura_apontamento_horas)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_despesas_projeto (
+                surrogate_key_despesa NUMERIC(3) IDENTITY NOT NULL,
+                tipo_despesa VARCHAR(20) NOT NULL,
+                CONSTRAINT Dimensao_despesas_projeto_pk PRIMARY KEY (surrogate_key_despesa)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_calendario (
+                ano_mes_calendario NUMERIC(6) IDENTITY NOT NULL,
+                numero_ano_calendario NUMERIC(4) NOT NULL,
+                numero_mes_calendario NUMERIC(2) NOT NULL,
+                nome_mes_calendario VARCHAR(18) NOT NULL,
+                dias_uteis_mes_calendario NUMERIC NOT NULL,
+                CONSTRAINT Dimensao_calendario_pk PRIMARY KEY (ano_mes_calendario)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cliente (
+                codigo_cliente NUMERIC(5) IDENTITY NOT NULL,
+                nome_cliente VARCHAR(50) NOT NULL,
+                codigo_cnpj_cliente NUMERIC(14) NOT NULL,
+                endereco_email_cliente VARCHAR(40) NOT NULL,
+                numero_telefone_cliente NUMERIC(10) NOT NULL,
+                data_cadastro_cliente DATETIME NOT NULL,
+                CONSTRAINT Dimensao_cliente_pk PRIMARY KEY (codigo_cliente)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cargo (
+                codigo_cargo VARCHAR(3) NOT NULL,
+                descricao_cargo VARCHAR(40) NOT NULL,
+                valor_custo_hora NUMERIC(5,2) NOT NULL,
+                valor_custo_dia NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Dimensao_cargo_pk PRIMARY KEY (codigo_cargo)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_tipo_projeto (
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                descricao_tipo_projeto VARCHAR(50) NOT NULL,
+                CONSTRAINT Dimensao_tipo_projeto_pk PRIMARY KEY (codigo_tipo_projeto)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_centro_custo (
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                descricao_centro_custo VARCHAR(30) NOT NULL,
+                codigo_centro_custo_pai VARCHAR(10) NOT NULL,
+                codigo_matricula_responsavel_centro_custo VARCHAR(5) NOT NULL,
+                nome_responsavel_centro_custo VARCHAR(40) NOT NULL,
+                CONSTRAINT Dimensao_centro_custo_pk PRIMARY KEY (codigo_centro_custo)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_projeto (
+                surrogate_key_projeto VARCHAR(10) IDENTITY NOT NULL,
+                codigo_projeto NUMERIC(10) NOT NULL,
+                descricao_projeto VARCHAR(60) NOT NULL,
+                codigo_matricula_gestor_projeto VARCHAR(5) NOT NULL,
+                nome_gestor_projeto VARCHAR(40) NOT NULL,
+                valor_receita_projeto NUMERIC(9,2) NOT NULL,
+                valor_custo_projeto NUMERIC(9,2) NOT NULL,
+                valor_margem_projeto NUMERIC(9,2) NOT NULL,
+                percentual_margem_projeto NUMERIC(9,2) NOT NULL,
+                data_inicio_projeto DATETIME NOT NULL,
+                data_fim_projeto DATETIME NOT NULL,
+                numero_versao_projeto NUMERIC(2) NOT NULL,
+                CONSTRAINT Dimensao_projeto_pk PRIMARY KEY (surrogate_key_projeto)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_filial (
+                codigo_filial NUMERIC(2) IDENTITY NOT NULL,
+                nome_filial VARCHAR(20) NOT NULL,
+                endereco_filial VARCHAR(40) NOT NULL,
+                nome_cidade_filial VARCHAR(20) NOT NULL,
+                nome_estado_filial VARCHAR(20) NOT NULL,
+                codigo_cnpj_filial NUMERIC(14) NOT NULL,
+                endereco_email_filial VARCHAR(40) NOT NULL,
+                numero_telefone_filial NUMERIC(10) NOT NULL,
+                CONSTRAINT Dimensao_filial_pk PRIMARY KEY (codigo_filial)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_segmento_mercado (
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                nome_segmento_mercado_consolidado VARCHAR(30) NOT NULL,
+                nome_segmento_mercado_detalhado VARCHAR(30) NOT NULL,
+                CONSTRAINT Dimensao_segmento_mercado_pk PRIMARY KEY (codigo_segmento_mercado)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_planejado (
+                surrogate_key_projeto_planejado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                codigo_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_projeto VARCHAR(10) NOT NULL,
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                surrogate_key_despesa NUMERIC(3) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                quantidade_trabalho_hora_normal NUMERIC(2,2) NOT NULL,
+                quantidade_trabalho_hora_extra NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_planejado_pk PRIMARY KEY (surrogate_key_projeto_planejado)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dim_colaborador (
+                surrogate_key_colaborador NUMERIC(5) IDENTITY NOT NULL,
+                codigo_matricula_colaborador VARCHAR(5) NOT NULL,
+                nome_colaborador VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador VARCHAR(3) NOT NULL,
+                data_nascimento_colaborador DATETIME NOT NULL,
+                nome_cidade_coaborador VARCHAR(30) NOT NULL,
+                numero_cpf_colaborador VARCHAR(11) NOT NULL,
+                endereco_email_colaborador VARCHAR(40) NOT NULL,
+                data_admissao_colaborador DATETIME NOT NULL,
+                CONSTRAINT Dim_colaborador_pk PRIMARY KEY (surrogate_key_colaborador)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_realizado (
+                surrogate_key_projeto_realizado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                surrogate_key_colaborador NUMERIC(5) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                codigo_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_projeto VARCHAR(10) NOT NULL,
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_filial NUMERIC(2) NOT NULL,
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                surrogate_key_despesa NUMERIC(3) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                indicador_tipo_hora_trabalhada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_realizado_pk PRIMARY KEY (surrogate_key_projeto_realizado)
+)
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_realizado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_planejado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cliente)
+REFERENCES Dimensao_cliente (codigo_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cliente)
+REFERENCES Dimensao_cliente (codigo_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_tipo_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_tipo_projeto)
+REFERENCES Dimensao_tipo_projeto (codigo_tipo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_tipo_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_tipo_projeto)
+REFERENCES Dimensao_tipo_projeto (codigo_tipo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_centro_custo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_centro_custo)
+REFERENCES Dimensao_centro_custo (codigo_centro_custo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_centro_custo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_centro_custo)
+REFERENCES Dimensao_centro_custo (codigo_centro_custo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_projeto)
+REFERENCES Dimensao_projeto (surrogate_key_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_projeto)
+REFERENCES Dimensao_projeto (surrogate_key_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_filial_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_filial)
+REFERENCES Dimensao_filial (codigo_filial)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (codigo_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (codigo_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dim_colaborador_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_colaborador)
+REFERENCES Dim_colaborador (surrogate_key_colaborador)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42277465 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :32
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE TABELA_CAPTURA_PLANEJAMENTO_HORAS (
+                surrogate_key_captura_planejamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                mes_planejado NUMERIC(2) NOT NULL,
+                ano_planejado NUMERIC(2) NOT NULL,
+                codigo_centro_custo_planejado VARCHAR(10) NOT NULL,
+                descricao_centro_custo_planejado VARCHAR(30) NOT NULL,
+                codigo_projeto_planejado NUMERIC(10) NOT NULL,
+                codigo_cliente_planejado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_planejado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT TABELA_CAPTURA_PLANEJAMENTO_HORAS_pk PRIMARY KEY (surrogate_key_captura_planejamento_horas)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE TABELA_CAPTURA_APONTAMENTO_HORAS (
+                surrogate_key_captura_apontamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                data_apontamento DATETIME NOT NULL,
+                codigo_matricula_colaborador_apontado VARCHAR(5) NOT NULL,
+                nome_colaborador_apontado VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho_apontado VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                codgo_filial_apontada NUMERIC(2) NOT NULL,
+                nome_filial_apontada VARCHAR(20) NOT NULL,
+                codigo_centro_custo_apontado VARCHAR(10) NOT NULL,
+                descricao_centro_custo_apontado VARCHAR(30) NOT NULL,
+                codigo_projeto_apontado NUMERIC(10) NOT NULL,
+                codigo_cliente_apontado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_apontado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                indicador_tipo_hora_trabalhada_apontada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT TABELA_CAPTURA_APONTAMENTO_HORAS_pk PRIMARY KEY (surrogate_key_captura_apontamento_horas)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_despesas_projeto (
+                surrogate_key_despesa NUMERIC(3) IDENTITY NOT NULL,
+                tipo_despesa VARCHAR(20) NOT NULL,
+                CONSTRAINT Dimensao_despesas_projeto_pk PRIMARY KEY (surrogate_key_despesa)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_calendario (
+                ano_mes_calendario NUMERIC(6) IDENTITY NOT NULL,
+                numero_ano_calendario NUMERIC(4) NOT NULL,
+                numero_mes_calendario NUMERIC(2) NOT NULL,
+                nome_mes_calendario VARCHAR(18) NOT NULL,
+                dias_uteis_mes_calendario NUMERIC NOT NULL,
+                CONSTRAINT Dimensao_calendario_pk PRIMARY KEY (ano_mes_calendario)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cliente (
+                codigo_cliente NUMERIC(5) IDENTITY NOT NULL,
+                nome_cliente VARCHAR(50) NOT NULL,
+                codigo_cnpj_cliente NUMERIC(14) NOT NULL,
+                endereco_email_cliente VARCHAR(40) NOT NULL,
+                numero_telefone_cliente NUMERIC(10) NOT NULL,
+                data_cadastro_cliente DATETIME NOT NULL,
+                CONSTRAINT Dimensao_cliente_pk PRIMARY KEY (codigo_cliente)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cargo (
+                codigo_cargo VARCHAR(3) NOT NULL,
+                descricao_cargo VARCHAR(40) NOT NULL,
+                valor_custo_hora NUMERIC(5,2) NOT NULL,
+                valor_custo_dia NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Dimensao_cargo_pk PRIMARY KEY (codigo_cargo)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_tipo_projeto (
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                descricao_tipo_projeto VARCHAR(50) NOT NULL,
+                CONSTRAINT Dimensao_tipo_projeto_pk PRIMARY KEY (codigo_tipo_projeto)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_centro_custo (
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                descricao_centro_custo VARCHAR(30) NOT NULL,
+                codigo_centro_custo_pai VARCHAR(10) NOT NULL,
+                codigo_matricula_responsavel_centro_custo VARCHAR(5) NOT NULL,
+                nome_responsavel_centro_custo VARCHAR(40) NOT NULL,
+                CONSTRAINT Dimensao_centro_custo_pk PRIMARY KEY (codigo_centro_custo)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_projeto (
+                surrogate_key_projeto VARCHAR(10) IDENTITY NOT NULL,
+                codigo_projeto NUMERIC(10) NOT NULL,
+                descricao_projeto VARCHAR(60) NOT NULL,
+                codigo_matricula_gestor_projeto VARCHAR(5) NOT NULL,
+                nome_gestor_projeto VARCHAR(40) NOT NULL,
+                valor_receita_projeto NUMERIC(9,2) NOT NULL,
+                valor_custo_projeto NUMERIC(9,2) NOT NULL,
+                valor_margem_projeto NUMERIC(9,2) NOT NULL,
+                percentual_margem_projeto NUMERIC(9,2) NOT NULL,
+                data_inicio_projeto DATETIME NOT NULL,
+                data_fim_projeto DATETIME NOT NULL,
+                numero_versao_projeto NUMERIC(2) NOT NULL,
+                CONSTRAINT Dimensao_projeto_pk PRIMARY KEY (surrogate_key_projeto)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_filial (
+                codigo_filial NUMERIC(2) IDENTITY NOT NULL,
+                nome_filial VARCHAR(20) NOT NULL,
+                endereco_filial VARCHAR(40) NOT NULL,
+                nome_cidade_filial VARCHAR(20) NOT NULL,
+                nome_estado_filial VARCHAR(20) NOT NULL,
+                codigo_cnpj_filial NUMERIC(14) NOT NULL,
+                endereco_email_filial VARCHAR(40) NOT NULL,
+                numero_telefone_filial NUMERIC(10) NOT NULL,
+                CONSTRAINT Dimensao_filial_pk PRIMARY KEY (codigo_filial)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_segmento_mercado (
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                nome_segmento_mercado_consolidado VARCHAR(30) NOT NULL,
+                nome_segmento_mercado_detalhado VARCHAR(30) NOT NULL,
+                CONSTRAINT Dimensao_segmento_mercado_pk PRIMARY KEY (codigo_segmento_mercado)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_planejado (
+                surrogate_key_projeto_planejado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                codigo_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_projeto VARCHAR(10) NOT NULL,
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                surrogate_key_despesa NUMERIC(3) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                quantidade_trabalho_hora_normal NUMERIC(2,2) NOT NULL,
+                quantidade_trabalho_hora_extra NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_planejado_pk PRIMARY KEY (surrogate_key_projeto_planejado)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dim_colaborador (
+                surrogate_key_colaborador NUMERIC(5) IDENTITY NOT NULL,
+                codigo_matricula_colaborador VARCHAR(5) NOT NULL,
+                nome_colaborador VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador VARCHAR(3) NOT NULL,
+                data_nascimento_colaborador DATETIME NOT NULL,
+                nome_cidade_coaborador VARCHAR(30) NOT NULL,
+                numero_cpf_colaborador VARCHAR(11) NOT NULL,
+                endereco_email_colaborador VARCHAR(40) NOT NULL,
+                data_admissao_colaborador DATETIME NOT NULL,
+                CONSTRAINT Dim_colaborador_pk PRIMARY KEY (surrogate_key_colaborador)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_realizado (
+                surrogate_key_projeto_realizado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                surrogate_key_colaborador NUMERIC(5) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                codigo_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_projeto VARCHAR(10) NOT NULL,
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_filial NUMERIC(2) NOT NULL,
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                surrogate_key_despesa NUMERIC(3) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                indicador_tipo_hora_trabalhada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_realizado_pk PRIMARY KEY (surrogate_key_projeto_realizado)
+)
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_realizado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_planejado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cliente)
+REFERENCES Dimensao_cliente (codigo_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cliente)
+REFERENCES Dimensao_cliente (codigo_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_tipo_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_tipo_projeto)
+REFERENCES Dimensao_tipo_projeto (codigo_tipo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_tipo_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_tipo_projeto)
+REFERENCES Dimensao_tipo_projeto (codigo_tipo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_centro_custo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_centro_custo)
+REFERENCES Dimensao_centro_custo (codigo_centro_custo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_centro_custo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_centro_custo)
+REFERENCES Dimensao_centro_custo (codigo_centro_custo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_projeto)
+REFERENCES Dimensao_projeto (surrogate_key_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_projeto)
+REFERENCES Dimensao_projeto (surrogate_key_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_filial_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_filial)
+REFERENCES Dimensao_filial (codigo_filial)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (codigo_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (codigo_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dim_colaborador_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_colaborador)
+REFERENCES Dim_colaborador (surrogate_key_colaborador)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42289370 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :32
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE TABELA_CAPTURA_PLANEJAMENTO_HORAS (
+                surrogate_key_captura_planejamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                mes_planejado NUMERIC(2) NOT NULL,
+                ano_planejado NUMERIC(2) NOT NULL,
+                codigo_centro_custo_planejado VARCHAR(10) NOT NULL,
+                descricao_centro_custo_planejado VARCHAR(30) NOT NULL,
+                codigo_projeto_planejado NUMERIC(10) NOT NULL,
+                codigo_cliente_planejado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_planejado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT TABELA_CAPTURA_PLANEJAMENTO_HORAS_pk PRIMARY KEY (surrogate_key_captura_planejamento_horas)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE TABELA_CAPTURA_APONTAMENTO_HORAS (
+                surrogate_key_captura_apontamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                data_apontamento DATETIME NOT NULL,
+                codigo_matricula_colaborador_apontado VARCHAR(5) NOT NULL,
+                nome_colaborador_apontado VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho_apontado VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                codgo_filial_apontada NUMERIC(2) NOT NULL,
+                nome_filial_apontada VARCHAR(20) NOT NULL,
+                codigo_centro_custo_apontado VARCHAR(10) NOT NULL,
+                descricao_centro_custo_apontado VARCHAR(30) NOT NULL,
+                codigo_projeto_apontado NUMERIC(10) NOT NULL,
+                codigo_cliente_apontado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_apontado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                indicador_tipo_hora_trabalhada_apontada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT TABELA_CAPTURA_APONTAMENTO_HORAS_pk PRIMARY KEY (surrogate_key_captura_apontamento_horas)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_despesas_projeto (
+                surrogate_key_despesa NUMERIC(3) IDENTITY NOT NULL,
+                tipo_despesa VARCHAR(20) NOT NULL,
+                CONSTRAINT Dimensao_despesas_projeto_pk PRIMARY KEY (surrogate_key_despesa)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_calendario (
+                ano_mes_calendario NUMERIC(6) IDENTITY NOT NULL,
+                numero_ano_calendario NUMERIC(4) NOT NULL,
+                numero_mes_calendario NUMERIC(2) NOT NULL,
+                nome_mes_calendario VARCHAR(18) NOT NULL,
+                dias_uteis_mes_calendario NUMERIC NOT NULL,
+                CONSTRAINT Dimensao_calendario_pk PRIMARY KEY (ano_mes_calendario)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cliente (
+                codigo_cliente NUMERIC(5) IDENTITY NOT NULL,
+                nome_cliente VARCHAR(50) NOT NULL,
+                codigo_cnpj_cliente NUMERIC(14) NOT NULL,
+                endereco_email_cliente VARCHAR(40) NOT NULL,
+                numero_telefone_cliente NUMERIC(10) NOT NULL,
+                data_cadastro_cliente DATETIME NOT NULL,
+                CONSTRAINT Dimensao_cliente_pk PRIMARY KEY (codigo_cliente)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cargo (
+                codigo_cargo VARCHAR(3) NOT NULL,
+                descricao_cargo VARCHAR(40) NOT NULL,
+                valor_custo_hora NUMERIC(5,2) NOT NULL,
+                valor_custo_dia NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Dimensao_cargo_pk PRIMARY KEY (codigo_cargo)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_tipo_projeto (
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                descricao_tipo_projeto VARCHAR(50) NOT NULL,
+                CONSTRAINT Dimensao_tipo_projeto_pk PRIMARY KEY (codigo_tipo_projeto)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_centro_custo (
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                descricao_centro_custo VARCHAR(30) NOT NULL,
+                codigo_centro_custo_pai VARCHAR(10) NOT NULL,
+                codigo_matricula_responsavel_centro_custo VARCHAR(5) NOT NULL,
+                nome_responsavel_centro_custo VARCHAR(40) NOT NULL,
+                CONSTRAINT Dimensao_centro_custo_pk PRIMARY KEY (codigo_centro_custo)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_projeto (
+                surrogate_key_projeto VARCHAR(10) IDENTITY NOT NULL,
+                codigo_projeto NUMERIC(10) NOT NULL,
+                descricao_projeto VARCHAR(60) NOT NULL,
+                codigo_matricula_gestor_projeto VARCHAR(5) NOT NULL,
+                nome_gestor_projeto VARCHAR(40) NOT NULL,
+                valor_receita_projeto NUMERIC(9,2) NOT NULL,
+                valor_custo_projeto NUMERIC(9,2) NOT NULL,
+                valor_margem_projeto NUMERIC(9,2) NOT NULL,
+                percentual_margem_projeto NUMERIC(9,2) NOT NULL,
+                data_inicio_projeto DATETIME NOT NULL,
+                data_fim_projeto DATETIME NOT NULL,
+                numero_versao_projeto NUMERIC(2) NOT NULL,
+                CONSTRAINT Dimensao_projeto_pk PRIMARY KEY (surrogate_key_projeto)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_filial (
+                codigo_filial NUMERIC(2) IDENTITY NOT NULL,
+                nome_filial VARCHAR(20) NOT NULL,
+                endereco_filial VARCHAR(40) NOT NULL,
+                nome_cidade_filial VARCHAR(20) NOT NULL,
+                nome_estado_filial VARCHAR(20) NOT NULL,
+                codigo_cnpj_filial NUMERIC(14) NOT NULL,
+                endereco_email_filial VARCHAR(40) NOT NULL,
+                numero_telefone_filial NUMERIC(10) NOT NULL,
+                CONSTRAINT Dimensao_filial_pk PRIMARY KEY (codigo_filial)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_segmento_mercado (
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                nome_segmento_mercado_consolidado VARCHAR(30) NOT NULL,
+                nome_segmento_mercado_detalhado VARCHAR(30) NOT NULL,
+                CONSTRAINT Dimensao_segmento_mercado_pk PRIMARY KEY (codigo_segmento_mercado)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_planejado (
+                surrogate_key_projeto_planejado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                codigo_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_projeto VARCHAR(10) NOT NULL,
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                surrogate_key_despesa NUMERIC(3) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                quantidade_trabalho_hora_normal NUMERIC(2,2) NOT NULL,
+                quantidade_trabalho_hora_extra NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_planejado_pk PRIMARY KEY (surrogate_key_projeto_planejado)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dim_colaborador (
+                surrogate_key_colaborador NUMERIC(5) IDENTITY NOT NULL,
+                codigo_matricula_colaborador VARCHAR(5) NOT NULL,
+                nome_colaborador VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador VARCHAR(3) NOT NULL,
+                data_nascimento_colaborador DATETIME NOT NULL,
+                nome_cidade_coaborador VARCHAR(30) NOT NULL,
+                numero_cpf_colaborador VARCHAR(11) NOT NULL,
+                endereco_email_colaborador VARCHAR(40) NOT NULL,
+                data_admissao_colaborador DATETIME NOT NULL,
+                CONSTRAINT Dim_colaborador_pk PRIMARY KEY (surrogate_key_colaborador)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_realizado (
+                surrogate_key_projeto_realizado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                surrogate_key_colaborador NUMERIC(5) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                codigo_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_projeto VARCHAR(10) NOT NULL,
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_filial NUMERIC(2) NOT NULL,
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                surrogate_key_despesa NUMERIC(3) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                indicador_tipo_hora_trabalhada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_realizado_pk PRIMARY KEY (surrogate_key_projeto_realizado)
+)
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_realizado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_planejado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cliente)
+REFERENCES Dimensao_cliente (codigo_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cliente)
+REFERENCES Dimensao_cliente (codigo_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_tipo_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_tipo_projeto)
+REFERENCES Dimensao_tipo_projeto (codigo_tipo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_tipo_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_tipo_projeto)
+REFERENCES Dimensao_tipo_projeto (codigo_tipo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_centro_custo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_centro_custo)
+REFERENCES Dimensao_centro_custo (codigo_centro_custo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_centro_custo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_centro_custo)
+REFERENCES Dimensao_centro_custo (codigo_centro_custo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_projeto)
+REFERENCES Dimensao_projeto (surrogate_key_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_projeto)
+REFERENCES Dimensao_projeto (surrogate_key_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_filial_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_filial)
+REFERENCES Dimensao_filial (codigo_filial)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (codigo_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (codigo_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dim_colaborador_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_colaborador)
+REFERENCES Dim_colaborador (surrogate_key_colaborador)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+42331433 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :32
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+595  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+674  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+674  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+721  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE TABELA_CAPTURA_PLANEJAMENTO_HORAS (
+                surrogate_key_captura_planejamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                mes_planejado NUMERIC(2) NOT NULL,
+                ano_planejado NUMERIC(2) NOT NULL,
+                codigo_centro_custo_planejado VARCHAR(10) NOT NULL,
+                descricao_centro_custo_planejado VARCHAR(30) NOT NULL,
+                codigo_projeto_planejado NUMERIC(10) NOT NULL,
+                codigo_cliente_planejado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_planejado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT TABELA_CAPTURA_PLANEJAMENTO_HORAS_pk PRIMARY KEY (surrogate_key_captura_planejamento_horas)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE TABELA_CAPTURA_APONTAMENTO_HORAS (
+                surrogate_key_captura_apontamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                data_apontamento DATETIME NOT NULL,
+                codigo_matricula_colaborador_apontado VARCHAR(5) NOT NULL,
+                nome_colaborador_apontado VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho_apontado VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                codgo_filial_apontada NUMERIC(2) NOT NULL,
+                nome_filial_apontada VARCHAR(20) NOT NULL,
+                codigo_centro_custo_apontado VARCHAR(10) NOT NULL,
+                descricao_centro_custo_apontado VARCHAR(30) NOT NULL,
+                codigo_projeto_apontado NUMERIC(10) NOT NULL,
+                codigo_cliente_apontado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_apontado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                indicador_tipo_hora_trabalhada_apontada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT TABELA_CAPTURA_APONTAMENTO_HORAS_pk PRIMARY KEY (surrogate_key_captura_apontamento_horas)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_despesas_projeto (
+                surrogate_key_despesa NUMERIC(3) IDENTITY NOT NULL,
+                tipo_despesa VARCHAR(20) NOT NULL,
+                CONSTRAINT Dimensao_despesas_projeto_pk PRIMARY KEY (surrogate_key_despesa)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_calendario (
+                ano_mes_calendario NUMERIC(6) IDENTITY NOT NULL,
+                numero_ano_calendario NUMERIC(4) NOT NULL,
+                numero_mes_calendario NUMERIC(2) NOT NULL,
+                nome_mes_calendario VARCHAR(18) NOT NULL,
+                dias_uteis_mes_calendario NUMERIC NOT NULL,
+                CONSTRAINT Dimensao_calendario_pk PRIMARY KEY (ano_mes_calendario)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cliente (
+                codigo_cliente NUMERIC(5) IDENTITY NOT NULL,
+                nome_cliente VARCHAR(50) NOT NULL,
+                codigo_cnpj_cliente NUMERIC(14) NOT NULL,
+                endereco_email_cliente VARCHAR(40) NOT NULL,
+                numero_telefone_cliente NUMERIC(10) NOT NULL,
+                data_cadastro_cliente DATETIME NOT NULL,
+                CONSTRAINT Dimensao_cliente_pk PRIMARY KEY (codigo_cliente)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cargo (
+                codigo_cargo VARCHAR(3) NOT NULL,
+                descricao_cargo VARCHAR(40) NOT NULL,
+                valor_custo_hora NUMERIC(5,2) NOT NULL,
+                valor_custo_dia NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Dimensao_cargo_pk PRIMARY KEY (codigo_cargo)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_tipo_projeto (
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                descricao_tipo_projeto VARCHAR(50) NOT NULL,
+                CONSTRAINT Dimensao_tipo_projeto_pk PRIMARY KEY (codigo_tipo_projeto)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_centro_custo (
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                descricao_centro_custo VARCHAR(30) NOT NULL,
+                codigo_centro_custo_pai VARCHAR(10) NOT NULL,
+                codigo_matricula_responsavel_centro_custo VARCHAR(5) NOT NULL,
+                nome_responsavel_centro_custo VARCHAR(40) NOT NULL,
+                CONSTRAINT Dimensao_centro_custo_pk PRIMARY KEY (codigo_centro_custo)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_projeto (
+                surrogate_key_projeto VARCHAR(10) IDENTITY NOT NULL,
+                codigo_projeto NUMERIC(10) NOT NULL,
+                descricao_projeto VARCHAR(60) NOT NULL,
+                codigo_matricula_gestor_projeto VARCHAR(5) NOT NULL,
+                nome_gestor_projeto VARCHAR(40) NOT NULL,
+                valor_receita_projeto NUMERIC(9,2) NOT NULL,
+                valor_custo_projeto NUMERIC(9,2) NOT NULL,
+                valor_margem_projeto NUMERIC(9,2) NOT NULL,
+                percentual_margem_projeto NUMERIC(9,2) NOT NULL,
+                data_inicio_projeto DATETIME NOT NULL,
+                data_fim_projeto DATETIME NOT NULL,
+                numero_versao_projeto NUMERIC(2) NOT NULL,
+                CONSTRAINT Dimensao_projeto_pk PRIMARY KEY (surrogate_key_projeto)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_filial (
+                codigo_filial NUMERIC(2) IDENTITY NOT NULL,
+                nome_filial VARCHAR(20) NOT NULL,
+                endereco_filial VARCHAR(40) NOT NULL,
+                nome_cidade_filial VARCHAR(20) NOT NULL,
+                nome_estado_filial VARCHAR(20) NOT NULL,
+                codigo_cnpj_filial NUMERIC(14) NOT NULL,
+                endereco_email_filial VARCHAR(40) NOT NULL,
+                numero_telefone_filial NUMERIC(10) NOT NULL,
+                CONSTRAINT Dimensao_filial_pk PRIMARY KEY (codigo_filial)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_segmento_mercado (
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                nome_segmento_mercado_consolidado VARCHAR(30) NOT NULL,
+                nome_segmento_mercado_detalhado VARCHAR(30) NOT NULL,
+                CONSTRAINT Dimensao_segmento_mercado_pk PRIMARY KEY (codigo_segmento_mercado)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_planejado (
+                surrogate_key_projeto_planejado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                codigo_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_projeto VARCHAR(10) NOT NULL,
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                surrogate_key_despesa NUMERIC(3) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                quantidade_trabalho_hora_normal NUMERIC(2,2) NOT NULL,
+                quantidade_trabalho_hora_extra NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_planejado_pk PRIMARY KEY (surrogate_key_projeto_planejado)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dim_colaborador (
+                surrogate_key_colaborador NUMERIC(5) IDENTITY NOT NULL,
+                codigo_matricula_colaborador VARCHAR(5) NOT NULL,
+                nome_colaborador VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador VARCHAR(3) NOT NULL,
+                data_nascimento_colaborador DATETIME NOT NULL,
+                nome_cidade_coaborador VARCHAR(30) NOT NULL,
+                numero_cpf_colaborador VARCHAR(11) NOT NULL,
+                endereco_email_colaborador VARCHAR(40) NOT NULL,
+                data_admissao_colaborador DATETIME NOT NULL,
+                CONSTRAINT Dim_colaborador_pk PRIMARY KEY (surrogate_key_colaborador)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_realizado (
+                surrogate_key_projeto_realizado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                surrogate_key_colaborador NUMERIC(5) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                codigo_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_projeto VARCHAR(10) NOT NULL,
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_filial NUMERIC(2) NOT NULL,
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                surrogate_key_despesa NUMERIC(3) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                indicador_tipo_hora_trabalhada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_realizado_pk PRIMARY KEY (surrogate_key_projeto_realizado)
+)
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_realizado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_planejado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cliente)
+REFERENCES Dimensao_cliente (codigo_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cliente)
+REFERENCES Dimensao_cliente (codigo_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_tipo_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_tipo_projeto)
+REFERENCES Dimensao_tipo_projeto (codigo_tipo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_tipo_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_tipo_projeto)
+REFERENCES Dimensao_tipo_projeto (codigo_tipo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_centro_custo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_centro_custo)
+REFERENCES Dimensao_centro_custo (codigo_centro_custo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_centro_custo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_centro_custo)
+REFERENCES Dimensao_centro_custo (codigo_centro_custo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_projeto)
+REFERENCES Dimensao_projeto (surrogate_key_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_projeto)
+REFERENCES Dimensao_projeto (surrogate_key_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_filial_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_filial)
+REFERENCES Dimensao_filial (codigo_filial)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (codigo_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (codigo_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10893 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dim_colaborador_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_colaborador)
+REFERENCES Dim_colaborador (surrogate_key_colaborador)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+10917 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :32
+12941 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - SQL_FILE_FILTER:SQL Script Files:[sql, ddl]
+22562 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+470  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+549  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+549  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+580  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+22375 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+34015 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+130391 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+130391 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+169592 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+169592 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+169592 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE Tabela_captura_planejamento_horas (
+                surrogate_key_captura_planejamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                mes_planejado NUMERIC(2) NOT NULL,
+                ano_planejado NUMERIC(2) NOT NULL,
+                codigo_centro_custo_planejado VARCHAR(10) NOT NULL,
+                descricao_centro_custo_planejado VARCHAR(30) NOT NULL,
+                codigo_projeto_planejado NUMERIC(10) NOT NULL,
+                codigo_cliente_planejado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_planejado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT Tabela_captura_planejamento_horas_pk PRIMARY KEY (surrogate_key_captura_planejamento_horas)
+)
+169592 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Tabela_captura_apontamento_horas (
+                surrogate_key_captura_apontamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                data_apontamento DATETIME NOT NULL,
+                codigo_matricula_colaborador_apontado VARCHAR(5) NOT NULL,
+                nome_colaborador_apontado VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho_apontado VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                codgo_filial_apontada NUMERIC(2) NOT NULL,
+                nome_filial_apontada VARCHAR(20) NOT NULL,
+                codigo_centro_custo_apontado VARCHAR(10) NOT NULL,
+                descricao_centro_custo_apontado VARCHAR(30) NOT NULL,
+                codigo_projeto_apontado NUMERIC(10) NOT NULL,
+                codigo_cliente_apontado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_apontado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                indicador_tipo_hora_trabalhada_apontada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT Tabela_captura_apontamento_horas_pk PRIMARY KEY (surrogate_key_captura_apontamento_horas)
+)
+169592 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_despesas_projeto (
+                surrogate_key_despesa NUMERIC(3) IDENTITY NOT NULL,
+                tipo_despesa VARCHAR(20) NOT NULL,
+                CONSTRAINT Dimensao_despesas_projeto_pk PRIMARY KEY (surrogate_key_despesa)
+)
+169592 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_calendario (
+                ano_mes_calendario NUMERIC(6) IDENTITY NOT NULL,
+                numero_ano_calendario NUMERIC(4) NOT NULL,
+                numero_mes_calendario NUMERIC(2) NOT NULL,
+                nome_mes_calendario VARCHAR(18) NOT NULL,
+                dias_uteis_mes_calendario NUMERIC NOT NULL,
+                CONSTRAINT Dimensao_calendario_pk PRIMARY KEY (ano_mes_calendario)
+)
+169592 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cliente (
+                codigo_cliente NUMERIC(5) IDENTITY NOT NULL,
+                nome_cliente VARCHAR(50) NOT NULL,
+                codigo_cnpj_cliente NUMERIC(14) NOT NULL,
+                endereco_email_cliente VARCHAR(40) NOT NULL,
+                numero_telefone_cliente NUMERIC(10) NOT NULL,
+                data_cadastro_cliente DATETIME NOT NULL,
+                CONSTRAINT Dimensao_cliente_pk PRIMARY KEY (codigo_cliente)
+)
+169592 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cargo (
+                codigo_cargo VARCHAR(3) NOT NULL,
+                descricao_cargo VARCHAR(40) NOT NULL,
+                valor_custo_hora NUMERIC(5,2) NOT NULL,
+                valor_custo_dia NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Dimensao_cargo_pk PRIMARY KEY (codigo_cargo)
+)
+169592 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_tipo_projeto (
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                descricao_tipo_projeto VARCHAR(50) NOT NULL,
+                CONSTRAINT Dimensao_tipo_projeto_pk PRIMARY KEY (codigo_tipo_projeto)
+)
+169592 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_centro_custo (
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                descricao_centro_custo VARCHAR(30) NOT NULL,
+                codigo_centro_custo_pai VARCHAR(10) NOT NULL,
+                codigo_matricula_responsavel_centro_custo VARCHAR(5) NOT NULL,
+                nome_responsavel_centro_custo VARCHAR(40) NOT NULL,
+                CONSTRAINT Dimensao_centro_custo_pk PRIMARY KEY (codigo_centro_custo)
+)
+169592 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_projeto (
+                surrogate_key_projeto VARCHAR(10) IDENTITY NOT NULL,
+                codigo_projeto NUMERIC(10) NOT NULL,
+                descricao_projeto VARCHAR(60) NOT NULL,
+                codigo_matricula_gestor_projeto VARCHAR(5) NOT NULL,
+                nome_gestor_projeto VARCHAR(40) NOT NULL,
+                valor_receita_projeto NUMERIC(9,2) NOT NULL,
+                valor_custo_projeto NUMERIC(9,2) NOT NULL,
+                valor_margem_projeto NUMERIC(9,2) NOT NULL,
+                percentual_margem_projeto NUMERIC(9,2) NOT NULL,
+                data_inicio_projeto DATETIME NOT NULL,
+                data_fim_projeto DATETIME NOT NULL,
+                numero_versao_projeto NUMERIC(2) NOT NULL,
+                CONSTRAINT Dimensao_projeto_pk PRIMARY KEY (surrogate_key_projeto)
+)
+169592 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_filial (
+                codigo_filial NUMERIC(2) IDENTITY NOT NULL,
+                nome_filial VARCHAR(20) NOT NULL,
+                endereco_filial VARCHAR(40) NOT NULL,
+                nome_cidade_filial VARCHAR(20) NOT NULL,
+                nome_estado_filial VARCHAR(20) NOT NULL,
+                codigo_cnpj_filial NUMERIC(14) NOT NULL,
+                endereco_email_filial VARCHAR(40) NOT NULL,
+                numero_telefone_filial NUMERIC(10) NOT NULL,
+                CONSTRAINT Dimensao_filial_pk PRIMARY KEY (codigo_filial)
+)
+169592 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_segmento_mercado (
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                nome_segmento_mercado_consolidado VARCHAR(30) NOT NULL,
+                nome_segmento_mercado_detalhado VARCHAR(30) NOT NULL,
+                CONSTRAINT Dimensao_segmento_mercado_pk PRIMARY KEY (codigo_segmento_mercado)
+)
+169607 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_planejado (
+                surrogate_key_projeto_planejado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                codigo_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_projeto VARCHAR(10) NOT NULL,
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                surrogate_key_despesa NUMERIC(3) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                quantidade_trabalho_hora_normal NUMERIC(2,2) NOT NULL,
+                quantidade_trabalho_hora_extra NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_planejado_pk PRIMARY KEY (surrogate_key_projeto_planejado)
+)
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_colaborador (
+                surrogate_key_colaborador NUMERIC(5) IDENTITY NOT NULL,
+                codigo_matricula_colaborador VARCHAR(5) NOT NULL,
+                nome_colaborador VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador VARCHAR(3) NOT NULL,
+                data_nascimento_colaborador DATETIME NOT NULL,
+                nome_cidade_coaborador VARCHAR(30) NOT NULL,
+                numero_cpf_colaborador VARCHAR(11) NOT NULL,
+                endereco_email_colaborador VARCHAR(40) NOT NULL,
+                data_admissao_colaborador DATETIME NOT NULL,
+                CONSTRAINT Dimensao_colaborador_pk PRIMARY KEY (surrogate_key_colaborador)
+)
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_realizado (
+                surrogate_key_projeto_realizado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                surrogate_key_colaborador NUMERIC(5) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                codigo_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_projeto VARCHAR(10) NOT NULL,
+                codigo_tipo_projeto VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_filial NUMERIC(2) NOT NULL,
+                codigo_centro_custo VARCHAR(10) NOT NULL,
+                surrogate_key_despesa NUMERIC(3) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                indicador_tipo_hora_trabalhada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_realizado_pk PRIMARY KEY (surrogate_key_projeto_realizado)
+)
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_realizado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_planejado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cliente)
+REFERENCES Dimensao_cliente (codigo_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cliente)
+REFERENCES Dimensao_cliente (codigo_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_tipo_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_tipo_projeto)
+REFERENCES Dimensao_tipo_projeto (codigo_tipo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_tipo_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_tipo_projeto)
+REFERENCES Dimensao_tipo_projeto (codigo_tipo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_centro_custo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_centro_custo)
+REFERENCES Dimensao_centro_custo (codigo_centro_custo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_centro_custo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_centro_custo)
+REFERENCES Dimensao_centro_custo (codigo_centro_custo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_projeto)
+REFERENCES Dimensao_projeto (surrogate_key_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_projeto)
+REFERENCES Dimensao_projeto (surrogate_key_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_filial_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_filial)
+REFERENCES Dimensao_filial (codigo_filial)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (codigo_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (codigo_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dim_colaborador_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_colaborador)
+REFERENCES Dimensao_colaborador (surrogate_key_colaborador)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+169608 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :32
+178768 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - SQL_FILE_FILTER:SQL Script Files:[sql, ddl]
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+591  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+669  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+669  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+702  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+22669 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+86860743 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+86860743 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+87863253 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+87863253 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+87863253 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+87863253 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+87894397 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+87894397 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+87894397 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+87894397 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+87907538 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+87907538 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+87907538 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+87907553 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+87923940 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+87923940 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+87931478 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+87931478 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+87931494 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+87931494 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+87980915 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+87980915 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+87980915 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+88007353 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+88007353 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+88020473 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+88020473 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+88020473 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+88020473 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property physicalName changed while monitoring pkTable
+88020473 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+88020473 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown column property autoIncrementSequenceName changed while monitoring pkTable
+89607476 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89607476 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89607476 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89607476 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89607476 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89607476 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89650087 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89650087 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89650087 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89650087 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89650087 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89650087 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89653381 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89653381 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89653381 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89653381 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89653381 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+89653381 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+612  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+679  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+679  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+726  [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+22624 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+1283 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+1385 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+1386 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+1432 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+23674 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+647461 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+647463 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+647464 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+217151302 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+217151302 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+217151302 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+217159097 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.DBTree  - DBTree: exporting list of DnD-type tree paths
+220794429 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+222282837 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+222282837 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+222290829 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+222290829 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+222290829 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+222290829 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+222306557 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+222306557 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+222440713 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+222440713 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+222440713 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+222440713 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+223154196 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+223154196 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+223154196 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+223154196 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property name changed while monitoring pkTable
+223154196 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown SQLTypePhysicalProperties property precision changed while monitoring pkTable
+223154196 [AWT-EventQueue-0] WARN  ca.sqlpower.sqlobject.ForeignKeyColumnUpdaterPoolingSPListener  - Warning: unknown UserDefinedSQLType property myAutoIncrement changed while monitoring pkTable
+263112859 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@7eea06d6]
+302499889 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE Dicionario_dados (
+                nome_tabela VARCHAR(30) NOT NULL,
+                nome_atributo VARCHAR(30) NOT NULL,
+                tipo_dado VARCHAR(20) NOT NULL,
+                quantidade_caracteres VARCHAR(3) NOT NULL,
+                indicador_obrigatorio VARCHAR(3) NOT NULL,
+                valor_permitido VARCHAR(999) NOT NULL,
+                indicador_chave_primaria VARCHAR(3) NOT NULL,
+                indicador_chave_estrangeira VARCHAR(3) NOT NULL,
+                descricao_atributo VARCHAR(999) NOT NULL
+)
+302499904 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Tabela_captura_planejamento_horas (
+                surrogate_key_captura_planejamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                mes_planejado NUMERIC(2) NOT NULL,
+                ano_planejado NUMERIC(2) NOT NULL,
+                codigo_projeto_planejado NUMERIC(10) NOT NULL,
+                codigo_cliente_planejado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_planejado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT Tabela_captura_planejamento_horas_pk PRIMARY KEY (surrogate_key_captura_planejamento_horas)
+)
+302499905 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Tabela_captura_apontamento_horas (
+                surrogate_key_captura_apontamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                data_apontamento DATETIME NOT NULL,
+                codigo_matricula_colaborador_apontado VARCHAR(5) NOT NULL,
+                nome_colaborador_apontado VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho_apontado VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                codigo_filial_apontada NUMERIC(2) NOT NULL,
+                nome_filial_apontada VARCHAR(20) NOT NULL,
+                codigo_projeto_apontado NUMERIC(10) NOT NULL,
+                codigo_cliente_apontado NUMERIC(5) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                indicador_tipo_hora_trabalhada_apontada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT Tabela_captura_apontamento_horas_pk PRIMARY KEY (surrogate_key_captura_apontamento_horas)
+)
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_despesas_projeto (
+                surrogate_key_despesa NUMERIC(2) IDENTITY NOT NULL,
+                tipo_despesa VARCHAR(20) NOT NULL,
+                CONSTRAINT Dimensao_despesas_projeto_pk PRIMARY KEY (surrogate_key_despesa)
+)
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_calendario (
+                ano_mes_calendario NUMERIC(6) IDENTITY NOT NULL,
+                numero_ano_calendario NUMERIC(4) NOT NULL,
+                numero_mes_calendario NUMERIC(2) NOT NULL,
+                nome_mes_calendario VARCHAR(18) NOT NULL,
+                dias_uteis_mes_calendario NUMERIC(2) NOT NULL,
+                CONSTRAINT Dimensao_calendario_pk PRIMARY KEY (ano_mes_calendario)
+)
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cliente (
+                surrogate_key_cliente NUMERIC(5) IDENTITY NOT NULL,
+                nome_cliente VARCHAR(50) NOT NULL,
+                codigo_cnpj_cliente NUMERIC(14) NOT NULL,
+                endereco_email_cliente VARCHAR(40) NOT NULL,
+                numero_telefone_cliente NUMERIC(10) NOT NULL,
+                data_cadastro_cliente DATETIME NOT NULL,
+                CONSTRAINT Dimensao_cliente_pk PRIMARY KEY (surrogate_key_cliente)
+)
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cargo (
+                codigo_cargo VARCHAR(3) NOT NULL,
+                descricao_cargo VARCHAR(40) NOT NULL,
+                valor_custo_hora NUMERIC(5,2) NOT NULL,
+                valor_custo_dia NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Dimensao_cargo_pk PRIMARY KEY (codigo_cargo)
+)
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_projeto (
+                codigo_projeto NUMERIC(5) NOT NULL,
+                descricao_projeto VARCHAR(60) NOT NULL,
+                codigo_matricula_gestor_projeto VARCHAR(5) NOT NULL,
+                nome_gestor_projeto VARCHAR(40) NOT NULL,
+                valor_receita_projeto NUMERIC(9,2) NOT NULL,
+                valor_custo_projeto NUMERIC(9,2) NOT NULL,
+                data_inicio_projeto DATETIME NOT NULL,
+                data_fim_projeto DATETIME NOT NULL,
+                numero_versao_projeto NUMERIC(2) NOT NULL,
+                CONSTRAINT Dimensao_projeto_pk PRIMARY KEY (codigo_projeto)
+)
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_filial (
+                surrogate_key_filial NUMERIC(2) IDENTITY NOT NULL,
+                nome_filial VARCHAR(20) NOT NULL,
+                endereco_filial VARCHAR(40) NOT NULL,
+                nome_cidade_filial VARCHAR(20) NOT NULL,
+                nome_estado_filial VARCHAR(20) NOT NULL,
+                codigo_cnpj_filial NUMERIC(14) NOT NULL,
+                endereco_email_filial VARCHAR(40) NOT NULL,
+                numero_telefone_filial NUMERIC(10) NOT NULL,
+                CONSTRAINT Dimensao_filial_pk PRIMARY KEY (surrogate_key_filial)
+)
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_segmento_mercado (
+                surrogate_key_segmento_mercado NUMERIC(2) NOT NULL,
+                nome_segmento_mercado_consolidado VARCHAR(30) NOT NULL,
+                nome_segmento_mercado_detalhado VARCHAR(30) NOT NULL,
+                CONSTRAINT Dimensao_segmento_mercado_pk PRIMARY KEY (surrogate_key_segmento_mercado)
+)
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_planejado (
+                surrogate_key_projeto_planejado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                surrogate_key_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_segmento_mercado NUMERIC(2) NOT NULL,
+                surrogate_key_despesa NUMERIC(2) NOT NULL,
+                codigo_projeto NUMERIC(5) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                quantidade_trabalho_hora_normal NUMERIC(2,2) NOT NULL,
+                quantidade_trabalho_hora_extra NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_planejado_pk PRIMARY KEY (surrogate_key_projeto_planejado)
+)
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_colaborador (
+                surrogate_key_colaborador NUMERIC(5) IDENTITY NOT NULL,
+                codigo_matricula_colaborador VARCHAR(5) NOT NULL,
+                nome_colaborador VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador VARCHAR(3) NOT NULL,
+                data_nascimento_colaborador DATETIME NOT NULL,
+                nome_cidade_coaborador VARCHAR(30) NOT NULL,
+                numero_cpf_colaborador VARCHAR(11) NOT NULL,
+                endereco_email_colaborador VARCHAR(40) NOT NULL,
+                data_admissao_colaborador DATETIME NOT NULL,
+                CONSTRAINT Dimensao_colaborador_pk PRIMARY KEY (surrogate_key_colaborador)
+)
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_realizado (
+                surrogate_key_projeto_realizado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                surrogate_key_colaborador NUMERIC(5) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                surrogate_key_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_segmento_mercado NUMERIC(2) NOT NULL,
+                surrogate_key_filial NUMERIC(2) NOT NULL,
+                surrogate_key_despesa NUMERIC(2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                indicador_tipo_hora_trabalhada VARCHAR(2) NOT NULL,
+                quantidade_horas_trabalhadas NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                codigo_projeto NUMERIC(5) NOT NULL,
+                CONSTRAINT Fato_projeto_realizado_pk PRIMARY KEY (surrogate_key_projeto_realizado)
+)
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_realizado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_planejado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_cliente)
+REFERENCES Dimensao_cliente (surrogate_key_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_cliente)
+REFERENCES Dimensao_cliente (surrogate_key_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_projeto)
+REFERENCES Dimensao_projeto (codigo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_projeto)
+REFERENCES Dimensao_projeto (codigo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_filial_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_filial)
+REFERENCES Dimensao_filial (surrogate_key_filial)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (surrogate_key_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (surrogate_key_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499906 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dim_colaborador_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_colaborador)
+REFERENCES Dimensao_colaborador (surrogate_key_colaborador)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302499920 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :27
+302588141 [AWT-EventQueue-0] ERROR ca.sqlpower.architect.swingui.KettleDataSourceOptionsPanel  -  The map is: {}
+302595216 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+CREATE TABLE Dicionario_dados (
+                nome_tabela VARCHAR(30) NOT NULL,
+                nome_atributo VARCHAR(30) NOT NULL,
+                tipo_dado VARCHAR(20) NOT NULL,
+                quantidade_caracteres VARCHAR(3) NOT NULL,
+                indicador_obrigatorio VARCHAR(3) NOT NULL,
+                valor_permitido VARCHAR(999) NOT NULL,
+                indicador_chave_primaria VARCHAR(3) NOT NULL,
+                indicador_chave_estrangeira VARCHAR(3) NOT NULL,
+                descricao_atributo VARCHAR(999) NOT NULL
+)
+302595216 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Tabela_captura_planejamento_horas (
+                surrogate_key_captura_planejamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                mes_planejado NUMERIC(2) NOT NULL,
+                ano_planejado NUMERIC(2) NOT NULL,
+                codigo_projeto_planejado NUMERIC(10) NOT NULL,
+                codigo_cliente_planejado NUMERIC(5) NOT NULL,
+                codigo_tipo_projeto_planejado VARCHAR(1) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT Tabela_captura_planejamento_horas_pk PRIMARY KEY (surrogate_key_captura_planejamento_horas)
+)
+302595216 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Tabela_captura_apontamento_horas (
+                surrogate_key_captura_apontamento_horas NUMERIC(10) IDENTITY NOT NULL,
+                data_apontamento DATETIME NOT NULL,
+                codigo_matricula_colaborador_apontado VARCHAR(5) NOT NULL,
+                nome_colaborador_apontado VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho_apontado VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador_apontado VARCHAR(3) NOT NULL,
+                codigo_filial_apontada NUMERIC(2) NOT NULL,
+                nome_filial_apontada VARCHAR(20) NOT NULL,
+                codigo_projeto_apontado NUMERIC(10) NOT NULL,
+                codigo_cliente_apontado NUMERIC(5) NOT NULL,
+                codigo_segmento_mercado VARCHAR(4) NOT NULL,
+                indicador_tipo_hora_trabalhada_apontada VARCHAR NOT NULL,
+                quantidade_horas_trabalhadas_apontada NUMERIC(2,2) NOT NULL,
+                tipo_despesa_apontada VARCHAR(20) NOT NULL,
+                valor_despesa_apontada NUMERIC(5,2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                CONSTRAINT Tabela_captura_apontamento_horas_pk PRIMARY KEY (surrogate_key_captura_apontamento_horas)
+)
+302595216 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_despesas_projeto (
+                surrogate_key_despesa NUMERIC(2) IDENTITY NOT NULL,
+                tipo_despesa VARCHAR(20) NOT NULL,
+                CONSTRAINT Dimensao_despesas_projeto_pk PRIMARY KEY (surrogate_key_despesa)
+)
+302595216 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_calendario (
+                ano_mes_calendario NUMERIC(6) IDENTITY NOT NULL,
+                numero_ano_calendario NUMERIC(4) NOT NULL,
+                numero_mes_calendario NUMERIC(2) NOT NULL,
+                nome_mes_calendario VARCHAR(18) NOT NULL,
+                dias_uteis_mes_calendario NUMERIC(2) NOT NULL,
+                CONSTRAINT Dimensao_calendario_pk PRIMARY KEY (ano_mes_calendario)
+)
+302595216 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cliente (
+                surrogate_key_cliente NUMERIC(5) IDENTITY NOT NULL,
+                nome_cliente VARCHAR(50) NOT NULL,
+                codigo_cnpj_cliente NUMERIC(14) NOT NULL,
+                endereco_email_cliente VARCHAR(40) NOT NULL,
+                numero_telefone_cliente NUMERIC(10) NOT NULL,
+                data_cadastro_cliente DATETIME NOT NULL,
+                CONSTRAINT Dimensao_cliente_pk PRIMARY KEY (surrogate_key_cliente)
+)
+302595216 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_cargo (
+                codigo_cargo VARCHAR(3) NOT NULL,
+                descricao_cargo VARCHAR(40) NOT NULL,
+                valor_custo_hora NUMERIC(5,2) NOT NULL,
+                valor_custo_dia NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Dimensao_cargo_pk PRIMARY KEY (codigo_cargo)
+)
+302595216 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_projeto (
+                codigo_projeto NUMERIC(5) NOT NULL,
+                descricao_projeto VARCHAR(60) NOT NULL,
+                codigo_matricula_gestor_projeto VARCHAR(5) NOT NULL,
+                nome_gestor_projeto VARCHAR(40) NOT NULL,
+                valor_receita_projeto NUMERIC(9,2) NOT NULL,
+                valor_custo_projeto NUMERIC(9,2) NOT NULL,
+                data_inicio_projeto DATETIME NOT NULL,
+                data_fim_projeto DATETIME NOT NULL,
+                numero_versao_projeto NUMERIC(2) NOT NULL,
+                CONSTRAINT Dimensao_projeto_pk PRIMARY KEY (codigo_projeto)
+)
+302595216 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_filial (
+                surrogate_key_filial NUMERIC(2) IDENTITY NOT NULL,
+                nome_filial VARCHAR(20) NOT NULL,
+                endereco_filial VARCHAR(40) NOT NULL,
+                nome_cidade_filial VARCHAR(20) NOT NULL,
+                nome_estado_filial VARCHAR(20) NOT NULL,
+                codigo_cnpj_filial NUMERIC(14) NOT NULL,
+                endereco_email_filial VARCHAR(40) NOT NULL,
+                numero_telefone_filial NUMERIC(10) NOT NULL,
+                CONSTRAINT Dimensao_filial_pk PRIMARY KEY (surrogate_key_filial)
+)
+302595220 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_segmento_mercado (
+                surrogate_key_segmento_mercado NUMERIC(2) NOT NULL,
+                nome_segmento_mercado_consolidado VARCHAR(30) NOT NULL,
+                nome_segmento_mercado_detalhado VARCHAR(30) NOT NULL,
+                CONSTRAINT Dimensao_segmento_mercado_pk PRIMARY KEY (surrogate_key_segmento_mercado)
+)
+302595220 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_planejado (
+                surrogate_key_projeto_planejado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                surrogate_key_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_segmento_mercado NUMERIC(2) NOT NULL,
+                surrogate_key_despesa NUMERIC(2) NOT NULL,
+                codigo_projeto NUMERIC(5) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                quantidade_trabalho_hora_normal NUMERIC(2,2) NOT NULL,
+                quantidade_trabalho_hora_extra NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                CONSTRAINT Fato_projeto_planejado_pk PRIMARY KEY (surrogate_key_projeto_planejado)
+)
+302595220 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Dimensao_colaborador (
+                surrogate_key_colaborador NUMERIC(5) IDENTITY NOT NULL,
+                codigo_matricula_colaborador VARCHAR(5) NOT NULL,
+                nome_colaborador VARCHAR(40) NOT NULL,
+                tipo_contrato_trabalho VARCHAR(3) NOT NULL,
+                codigo_cargo_colaborador VARCHAR(3) NOT NULL,
+                data_nascimento_colaborador DATETIME NOT NULL,
+                nome_cidade_coaborador VARCHAR(30) NOT NULL,
+                numero_cpf_colaborador VARCHAR(11) NOT NULL,
+                endereco_email_colaborador VARCHAR(40) NOT NULL,
+                data_admissao_colaborador DATETIME NOT NULL,
+                CONSTRAINT Dimensao_colaborador_pk PRIMARY KEY (surrogate_key_colaborador)
+)
+302595220 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+CREATE TABLE Fato_projeto_realizado (
+                surrogate_key_projeto_realizado NUMERIC(10) IDENTITY NOT NULL,
+                ano_mes_calendario NUMERIC(6) NOT NULL,
+                surrogate_key_colaborador NUMERIC(5) NOT NULL,
+                codigo_cargo VARCHAR(3) NOT NULL,
+                surrogate_key_cliente NUMERIC(5) NOT NULL,
+                surrogate_key_segmento_mercado NUMERIC(2) NOT NULL,
+                surrogate_key_filial NUMERIC(2) NOT NULL,
+                surrogate_key_despesa NUMERIC(2) NOT NULL,
+                data_carga DATETIME NOT NULL,
+                indicador_tipo_hora_trabalhada VARCHAR(2) NOT NULL,
+                quantidade_horas_trabalhadas NUMERIC(2,2) NOT NULL,
+                valor_despesa NUMERIC(5,2) NOT NULL,
+                codigo_projeto NUMERIC(5) NOT NULL,
+                CONSTRAINT Fato_projeto_realizado_pk PRIMARY KEY (surrogate_key_projeto_realizado)
+)
+302595220 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595220 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_despesas_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_despesa)
+REFERENCES Dimensao_despesas_projeto (surrogate_key_despesa)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595220 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_realizado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595220 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_calendario_Fato_projeto_planejado_fk
+FOREIGN KEY (ano_mes_calendario)
+REFERENCES Dimensao_calendario (ano_mes_calendario)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595224 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_cliente)
+REFERENCES Dimensao_cliente (surrogate_key_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595224 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cliente_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_cliente)
+REFERENCES Dimensao_cliente (surrogate_key_cliente)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595224 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595225 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_cargo_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_cargo)
+REFERENCES Dimensao_cargo (codigo_cargo)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595225 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_realizado_fk
+FOREIGN KEY (codigo_projeto)
+REFERENCES Dimensao_projeto (codigo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595225 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_projeto_Fato_projeto_planejado_fk
+FOREIGN KEY (codigo_projeto)
+REFERENCES Dimensao_projeto (codigo_projeto)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595225 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_filial_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_filial)
+REFERENCES Dimensao_filial (surrogate_key_filial)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595225 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (surrogate_key_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595225 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_planejado ADD CONSTRAINT Dimensao_segmento_mercado_Fato_projeto_planejado_fk
+FOREIGN KEY (surrogate_key_segmento_mercado)
+REFERENCES Dimensao_segmento_mercado (surrogate_key_segmento_mercado)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595225 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ddl.GenericDDLGenerator  - endStatement: 
+
+ALTER TABLE Fato_projeto_realizado ADD CONSTRAINT Dim_colaborador_Fato_projeto_realizado_fk
+FOREIGN KEY (surrogate_key_colaborador)
+REFERENCES Dimensao_colaborador (surrogate_key_colaborador)
+ON DELETE NO ACTION
+ON UPDATE NO ACTION
+302595225 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - The list size is :27
+302598347 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.SQLScriptDialog  - SQL_FILE_FILTER:SQL Script Files:[sql, ddl]
+1    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+1860 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+2017 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+2017 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+2097 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+1147 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+1252 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+1252 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+1309 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+23285 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+14296781 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.DBTree  - DBTree: exporting list of DnD-type tree paths
+14342982 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.DBTree  - DBTree: exporting list of DnD-type tree paths
+14347651 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.PlayPen  - Drop: I am over dtde=java.awt.dnd.DropTargetDropEvent[source=java.awt.dnd.DropTarget@91636e9]
+14360185 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+14361112 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+14361112 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+14364450 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+14364464 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+14368776 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.DBTree  - DBTree: exporting list of DnD-type tree paths
+14496826 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+14497391 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+14503624 [AWT-EventQueue-0] INFO  ca.sqlpower.object.undo.PropertyChangeEdit  - Found setter: setLengths
+14565980 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.DBTree  - DBTree: exporting list of DnD-type tree paths
+446445902 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.DBTree  - DBTree: exporting list of DnD-type tree paths
+446450707 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.DBTree  - DBTree: exporting list of DnD-type tree paths
+0    [AWT-EventQueue-0] INFO  ca.sqlpower.architect.ArchitectUtils  - Log4J configured successfully
+1500 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+1673 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+1689 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Beginning to read/merge new pl.ini data
+1783 [AWT-EventQueue-0] INFO  ca.sqlpower.sql.PlDotIni  - Finished reading file.
+24673 [Thread-5] ERROR ca.sqlpower.architect.swingui.action.CheckForUpdateAction  - Fail to retrieve current version number!
+1211019 [AWT-EventQueue-0] INFO  ca.sqlpower.architect.swingui.DBTree  - DBTree: exporting list of DnD-type tree paths
