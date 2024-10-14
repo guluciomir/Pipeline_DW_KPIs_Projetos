@@ -1,0 +1,10 @@
+codigo_filial;nome_filial;endereco_filial;nome_cidade_filial;nome_Estado_filial;codigo_cnpj_filial;endereco_email_filial;numero_telefone_filial
+M1;Matriz-SP;"Largo de Fernandes, 925
+Conjunto Minas Caixa
+34826171 Mendes / AL";São Paulo;SP;91.735.648/0001-61;m1@company.com;+55 41 7268-2045
+F2;Filial-BH;"Lagoa de Araújo, 182
+Marajó
+44771-079 da Paz / AL";Belo Horizonte;BH;81.092.734/0001-40;F2@company.com;(071) 0241 6994
+F3;Filial-RJ;"Vila Araújo, 8
+Pilar
+64551892 Rios do Norte / RO";Rio de Janeiro;RJ;18.647.305/0001-55;F3@company.com;71 0942 7032

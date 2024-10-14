@@ -1,0 +1,101 @@
+codigo_cliente;nome_cliente;codigo_cnpj_cliente;endereco_email_cliente;numero_telefone_cliente;data_cadastro_cliente
+1;Dias Mendonça e Filhos;81.942.567/0001-89;da-rochaisabella@da.com;(081) 1032-4299;2023-06-04
+2;Novaes Abreu S/A;08.241.796/0001-86;tmartins@fonseca.br;+55 (084) 6764 7348;2023-12-13
+3;Melo;70.923.645/0001-81;da-rosaeloa@marques.net;61 1459-9682;2022-02-17
+4;Farias S/A;42.639.510/0001-53;bmartins@silveira.br;31 4009 9776;2020-12-24
+5;Aparecida Aparecida - ME;26.791.408/0001-12;icavalcanti@abreu.br;61 9830-9201;2020-09-07
+6;da Conceição Cardoso Ltda.;05.712.684/0001-78;saleshadassa@oliveira.net;84 8063 4853;2020-02-15
+7;Moura Abreu - EI;53.061.742/0001-93;igor61@da.com;51 8698 0878;2020-06-25
+8;Marques;41.076.593/0001-57;rioslucca@cavalcante.com;71 2530-5620;2024-07-03
+9;Fonseca;73.159.064/0001-03;daniel02@novaes.org;41 0587 0702;2024-01-09
+10;da Mota;51.864.230/0001-30;hsilveira@leao.org;+55 (021) 9590 0337;2021-07-08
+11;Peixoto;51.376.248/0001-92;almeidabernardo@campos.com;84 5177-4963;2021-02-08
+12;Moraes Vieira - ME;75.013.842/0001-87;breno55@goncalves.com;(041) 8582 6550;2021-10-13
+13;Aragão Freitas S.A.;52.841.763/0001-69;mbarros@fogaca.net;+55 (041) 9499 0071;2020-01-17
+14;Castro e Filhos;93.756.018/0001-07;eloaaragao@fernandes.br;41 2790 7709;2022-07-07
+15;Silva;10.683.249/0001-00;rodrigocampos@lima.org;+55 (084) 4000-0687;2021-12-23
+16;Cavalcanti Ltda.;07.546.893/0001-14;josue43@aragao.org;0800 874 3786;2021-04-24
+17;Fogaça S/A;60.591.827/0001-49;franciscocirino@farias.br;0500 742 5279;2023-03-16
+18;Farias S.A.;53.410.728/0001-58;camargoleonardo@gomes.br;0900-975-4802;2020-04-05
+19;Martins Moreira - ME;70.614.235/0001-59;ribeirolara@alves.br;(011) 7385-4920;2022-05-18
+20;Martins S/A;45.837.916/0001-39;lizazevedo@carvalho.com;21 7190-2982;2021-10-27
+21;Jesus;72.645.013/0001-29;ncavalcante@alves.net;+55 (011) 4711-6686;2021-08-26
+22;Vargas Teixeira S.A.;15.286.904/0001-00;rochaanthony@vasconcelos.org;61 3649 2250;2023-01-08
+23;Duarte;68.724.350/0001-34;davi-luizpacheco@rodrigues.br;+55 51 9707 1524;2023-04-01
+24;Macedo;56.802.439/0001-92;mcastro@pimenta.br;+55 51 8210 9467;2020-01-04
+25;Fernandes;97.356.048/0001-79;meloevelyn@almeida.com;+55 (081) 1635-9569;2022-09-27
+26;Costa;01.657.238/0001-57;gfernandes@azevedo.org;(031) 6757 3864;2020-12-15
+27;Nascimento;39.475.021/0001-07;maria-flor37@porto.com;71 9965 6553;2024-08-01
+28;da Costa;17.529.043/0001-61;goncalvesana-livia@rios.br;0500 936 2028;2020-07-03
+29;da Rocha;42.571.069/0001-15;nsales@fernandes.br;+55 (021) 4043 7242;2023-10-22
+30;Sá - ME;49.132.507/0001-98;vitor-gabrielpinto@ribeiro.org;(071) 1781 9117;2020-06-11
+31;Vargas S.A.;45.209.163/0001-17;maria-clara09@rios.br;(021) 2996 0716;2020-06-06
+32;Cirino - ME;82.504.916/0001-43;valentimguerra@mendonca.br;71 0966-6971;2021-09-29
+33;Vargas;23.589.064/0001-75;xcaldeira@siqueira.br;+55 (084) 1252-1090;2020-06-06
+34;Nogueira;46.215.709/0001-05;omartins@lopes.com;+55 11 2825 2750;2023-11-13
+35;Melo;47.985.120/0001-59;gda-cunha@cassiano.com;71 5351 5781;2023-02-14
+36;Costa;57.201.843/0001-73;enricocastro@viana.net;+55 (071) 9202-1309;2023-09-21
+37;Novais Ltda.;74.328.096/0001-58;joao-guilhermeda-mota@ferreira.org;0500 309 9319;2022-04-25
+38;da Cruz;02.798.146/0001-50;pachecoheloisa@gomes.org;(061) 4294 8368;2023-01-22
+39;Pastor;15.063.247/0001-24;stephany25@viana.com;+55 84 6675 1884;2020-05-14
+40;Pastor;27.385.601/0001-16;lunna94@lopes.com;+55 (061) 7992 7103;2023-01-11
+41;Ramos;63.725.941/0001-02;caleb03@nunes.br;(051) 4760-3210;2020-06-19
+42;Novaes;58.460.913/0001-70;castroana-vitoria@cassiano.com;(011) 2175-9509;2023-12-25
+43;da Mota;59.031.687/0001-75;maria-sophia93@costa.org;0300 455 9139;2022-02-22
+44;Martins;10.623.584/0001-05;emanuelly15@casa.br;11 0473 2117;2020-08-20
+45;Alves;36.508.129/0001-52;henriqueferreira@fonseca.net;(041) 2280 0797;2021-07-17
+46;Barbosa;30.167.492/0001-75;augusto64@novaes.com;+55 61 7298-9873;2023-05-18
+47;Duarte - EI;54.031.682/0001-29;hcassiano@camargo.com;(021) 0948-9847;2022-08-09
+48;Castro - EI;89.023.516/0001-65;luiz-gustavopinto@camara.net;21 0751-6663;2023-10-30
+49;Novais - ME;61.435.798/0001-99;siqueiraelisa@almeida.br;(031) 9107 5998;2023-03-23
+50;Santos;75.210.694/0001-90;isis65@teixeira.br;+55 51 0928 5802;2020-06-22
+51;Ferreira da Paz Ltda.;06.935.741/0001-40;isis43@guerra.com;0300 035 1114;2020-03-03
+52;Silveira;17.620.935/0001-73;nnovaes@almeida.com;+55 51 1184 3456;2024-02-28
+53;Ramos;80.167.495/0001-87;domsouza@fogaca.org;+55 71 1438 4470;2022-12-03
+54;Guerra;20.381.754/0001-46;maysaferreira@montenegro.com;11 8980 9442;2021-09-03
+55;Lima - ME;95.681.723/0001-00;thalesda-paz@ferreira.com;(061) 2112-3338;2020-04-26
+56;Pinto Gomes e Filhos;20.861.374/0001-09;ramosallana@fogaca.br;0500 788 2867;2020-07-09
+57;Pinto Machado - ME;50.829.743/0001-47;rioslarissa@almeida.org;0300-316-8699;2020-07-16
+58;Costa;61.934.085/0001-70;ryancamara@cavalcante.br;(081) 0614 4920;2024-07-30
+59;Lopes;46.132.708/0001-05;daniloalmeida@mendonca.net;0800-905-6187;2021-09-04
+60;Martins Almeida - ME;45.823.167/0001-90;pedro-lucas90@pacheco.com;(084) 8209 1909;2022-01-01
+61;da Rocha;41.769.280/0001-84;isabella86@freitas.com;21 0589-2894;2020-12-19
+62;Pires;17.346.892/0001-80;jgoncalves@barros.br;(061) 1391-2505;2024-07-08
+63;Brito;34.168.507/0001-70;xda-cunha@mendonca.com;81 3691 3560;2021-08-26
+64;Pinto e Filhos;79.510.862/0001-14;lucca88@rios.com;+55 81 2385 3626;2024-05-26
+65;Ferreira S/A;86.902.375/0001-62;pastorbeatriz@da.br;+55 21 4886 7631;2022-07-08
+66;Freitas S/A;87.203.194/0001-00;grezende@ferreira.net;(061) 0085 5482;2021-03-26
+67;Nogueira;96.754.028/0001-93;uaraujo@da.org;+55 51 3467 9497;2022-09-01
+68;das Neves;94.386.721/0001-25;manuela17@castro.net;(021) 2241-7149;2022-11-24
+69;Cavalcanti Ltda.;06.489.352/0001-39;maraujo@aparecida.br;41 5284-2706;2023-04-20
+70;Camargo;97.803.645/0001-02;heloisavargas@moraes.org;41 8560 6448;2020-03-19
+71;Costa S.A.;75.429.038/0001-83;rodriguescaue@correia.com;(061) 4689-8426;2021-03-30
+72;Rios;07.648.952/0001-65;arthur-miguel00@pereira.br;0300-440-8242;2024-01-29
+73;Araújo;29.137.458/0001-79;miguel83@rezende.br;(061) 8653-7928;2022-04-08
+74;Rios;92.417.856/0001-85;wgarcia@mendes.br;(051) 0583-3529;2022-01-16
+75;Azevedo;16.730.582/0001-00;casa-grandeisaac@brito.br;(081) 1145-7626;2020-04-18
+76;Castro Novais e Filhos;49.102.763/0001-32;allana92@pacheco.org;+55 61 7955-7581;2020-09-17
+77;Silva;80.267.594/0001-30;sampaiovitoria@pacheco.com;(021) 8748 8305;2022-07-28
+78;Azevedo - ME;53.927.046/0001-17;sara11@sousa.br;(031) 6015 8975;2020-12-27
+79;Sampaio e Filhos;68.194.253/0001-87;henry39@pinto.br;+55 61 3481 0307;2023-06-07
+80;da Cruz Viana S.A.;23.871.096/0001-69;tfreitas@garcia.com;+55 (084) 4346-4047;2020-11-16
+81;Barros - EI;94.210.758/0001-06;hpereira@rezende.br;+55 31 3397-7122;2024-06-02
+82;Pimenta;69.104.783/0001-50;rebecaribeiro@fernandes.br;+55 21 6278-0879;2023-01-08
+83;Casa Grande;84.902.357/0001-55;joao-pedro28@novais.net;+55 21 1079-0811;2024-04-23
+84;Abreu;05.831.749/0001-02;vpinto@da.com;(071) 2121 7708;2023-07-31
+85;Fernandes;84.329.706/0001-91;da-luzjoao-miguel@alves.br;(011) 7938 3247;2021-11-18
+86;Alves;34.795.018/0001-49;ravibarros@barbosa.com;71 2286-1336;2024-06-02
+87;Ferreira;48.627.319/0001-78;lalbuquerque@novais.br;+55 81 3035 6113;2023-11-23
+88;Fogaça - ME;15.904.823/0001-19;ana-ceciliada-costa@pinto.br;+55 (061) 5759-0536;2020-07-09
+89;da Paz S.A.;41.362.985/0001-82;bmonteiro@guerra.br;+55 (071) 6389 0037;2024-03-16
+90;Aparecida;79.846.530/0001-05;calbuquerque@rocha.com;(051) 8599-1183;2021-09-20
+91;Costela Correia - ME;62.384.915/0001-03;joaquimpastor@barbosa.com;+55 (061) 1893-9219;2021-09-01
+92;Duarte Pereira S/A;45.863.092/0001-71;cassianonathan@andrade.net;+55 (041) 7413-6226;2023-06-07
+93;Barros - EI;74.156.089/0001-16;jpinto@goncalves.net;+55 41 7264 3638;2024-02-15
+94;Moreira;67.543.089/0001-03;ribeiroclara@melo.org;0900 172 5080;2021-10-16
+95;Dias S.A.;60.791.584/0001-92;martinsgael-henrique@fogaca.br;(081) 5240-5401;2021-08-16
+96;Porto Melo S.A.;98.736.125/0001-89;riosoliver@viana.br;+55 31 3663 8219;2023-08-19
+97;Santos Pacheco S/A;24.968.175/0001-55;da-rochaana-laura@pastor.com;41 9063-6591;2022-08-15
+98;Fernandes - EI;95.307.268/0001-87;faraujo@novaes.com;(071) 1555 7154;2020-08-01
+99;Carvalho e Filhos;03.879.612/0001-94;falves@almeida.com;+55 51 3768 2409;2020-01-14
+100;Azevedo Guerra e Filhos;97.615.284/0001-62;theodoropacheco@duarte.br;+55 (061) 1811-5918;2022-08-10

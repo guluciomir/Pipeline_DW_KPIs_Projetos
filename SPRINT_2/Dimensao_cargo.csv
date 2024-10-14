@@ -1,0 +1,21 @@
+codigo_cargo;descricao_cargo;valor_custo_hora;valor_custo_dia
+ADD;Analista de Dados;50,88;407
+ADS;Arquiteto de Soluções;173,13;1385
+AGC;Agile Coach;36,5;292
+ANC;Analista de Cloud;103,75;830
+AND;Analista Desenvlvedor;81;648
+ANF;Analista Funcional;39,75;318
+ANI;Analista de Infraestrutura;103,75;830
+AQA;Analista de QA;16,63;853
+CCO;Consultor Comercial;67,875;543
+CCY;Consultor Cybersecurity;118,625;949
+CDD;Cientista de Dados;83,13;665
+DUX;Designer UX/UI;52,88;423
+EDD;Engenheiro de Dados;73;584
+EPC;Especialista de Cloud;195,25;1562
+EPD;Especialista Desenvolvedor;169;1352
+EST;Estagiário;20;160
+GRC;Gerente Comercial;206,5;1652
+GRT;Gerente Técnico;206,5;1652
+PDO;Product Owner;96,13;769
+SCM;Scrum Master;97;776

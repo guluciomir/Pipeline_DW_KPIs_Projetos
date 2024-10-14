@@ -1,0 +1,251 @@
+id_projeto;descricao_projeto;codigo_matricula_gestor_projeto;nome_gestor_projeto;valor_receita_projeto;valor_custo_projeto;data_inicio_projeto;data_fim_projeto;numero_versao_projeto
+1;Venda Licenca Software;114;Arthur Gabriel Silva;2130003;1888131;09/06/2023;30/08/2025;1
+2;Consultoria;102;Alexia Marques;2347626;1840986;01/05/2023;17/09/2025;3
+3;Venda Licenca Software;114;Otávio da Luz;2495519;1920530;09/03/2024;24/09/2025;2
+4;Desenvolvimento de software;15;Nathan Peixoto;2366034;1939247;29/06/2024;03/02/2025;1
+5;Consultoria;47;Nathan Peixoto;2346723;1946222;21/02/2023;15/03/2025;3
+6;Processamento de dados;114;Otávio da Luz;2230180;1841820;14/05/2023;12/02/2025;3
+7;Desenvolvimento de software;15;Alexia Marques;2160382;1889283;31/05/2024;24/09/2025;3
+8;Mão-de-Obra Especiaizada;53;Otávio da Luz;2244376;1813620;12/01/2024;26/10/2025;3
+9;Processamento de dados;15;Nathan Peixoto;2245013;1901436;18/01/2024;03/10/2025;3
+10;Consultoria;47;Otávio da Luz;2302737;1878564;02/08/2023;22/09/2025;2
+11;Mão-de-Obra Especiaizada;102;Nathan Peixoto;2213672;1838482;26/06/2023;07/01/2025;1
+12;Desenvolvimento de software;47;Arthur Gabriel Silva;2020511;1879648;09/02/2023;03/10/2025;2
+13;Venda Licenca Software;47;Arthur Gabriel Silva;2267830;1895052;22/03/2023;04/08/2025;2
+14;Mão-de-Obra Especiaizada;47;Liz Nascimento;2267317;1861075;08/04/2023;15/04/2025;1
+15;Processamento de dados;47;Arthur Gabriel Silva;2044690;1910571;25/09/2023;23/07/2025;1
+16;Desenvolvimento de software;102;Otávio da Luz;2007061;1914960;26/01/2023;08/05/2025;2
+17;Serviços de migração de infraestrutura;47;Alexia Marques;2343209;1845724;11/09/2023;05/06/2025;1
+18;Processamento de dados;47;Nathan Peixoto;2397846;1917078;05/08/2024;03/03/2025;2
+19;Consultoria;102;Liz Nascimento;2142311;1983897;11/02/2024;13/12/2025;3
+20;Serviços de migração de infraestrutura;102;Nathan Peixoto;2425542;1952606;15/05/2023;08/03/2025;1
+21;Processamento de dados;47;Nathan Peixoto;2294805;1977253;14/11/2023;02/04/2025;3
+22;Processamento de dados;53;Otávio da Luz;2072663;1911058;26/03/2023;23/04/2025;3
+23;Venda Licenca Software;15;Liz Nascimento;2099621;1921866;26/03/2023;08/07/2025;3
+24;Desenvolvimento de software;114;Alexia Marques;2420009;1816208;02/04/2023;07/04/2025;3
+25;Processamento de dados;15;Liz Nascimento;2098866;1965322;09/05/2024;21/02/2025;2
+26;Processamento de dados;102;Alexia Marques;2056710;1997734;13/03/2023;07/08/2025;2
+27;Venda Licenca Software;53;Liz Nascimento;2362503;1856547;24/07/2024;15/09/2025;3
+28;Consultoria;47;Otávio da Luz;2465530;1886606;12/04/2024;03/09/2025;3
+29;Consultoria;15;Nathan Peixoto;2162626;1961947;09/10/2023;09/10/2025;3
+30;Desenvolvimento de software;114;Otávio da Luz;2288260;1813804;23/11/2023;14/11/2025;2
+31;Mão-de-Obra Especiaizada;102;Liz Nascimento;2469624;1891137;30/12/2023;27/04/2025;2
+32;Consultoria;114;Arthur Gabriel Silva;2341565;1956490;04/04/2024;12/12/2025;2
+33;Consultoria;114;Alexia Marques;2015386;1813790;13/11/2023;09/10/2025;1
+34;Venda Licenca Software;114;Otávio da Luz;2126636;1982784;12/02/2024;24/08/2025;1
+35;Consultoria;47;Nathan Peixoto;2311026;1858651;30/01/2023;23/03/2025;3
+36;Serviços de migração de infraestrutura;47;Arthur Gabriel Silva;2016198;1953360;12/04/2023;24/07/2025;3
+37;Serviços de migração de infraestrutura;47;Alexia Marques;2069062;1800374;09/02/2023;22/09/2025;1
+38;Serviços de migração de infraestrutura;102;Alexia Marques;2185529;1872007;22/01/2024;10/07/2025;1
+39;Processamento de dados;47;Alexia Marques;2123096;1822200;05/04/2023;11/04/2025;3
+40;Desenvolvimento de software;102;Alexia Marques;2243959;1880621;19/04/2024;15/09/2025;1
+41;Mão-de-Obra Especiaizada;15;Otávio da Luz;2134161;1837557;12/11/2023;28/06/2025;1
+42;Serviços de migração de infraestrutura;15;Arthur Gabriel Silva;2269657;1888674;06/04/2024;10/05/2025;2
+43;Venda Licenca Software;114;Nathan Peixoto;2234066;1960600;02/09/2024;20/05/2025;2
+44;Venda Licenca Software;114;Otávio da Luz;2132990;1940947;25/08/2023;07/01/2025;1
+45;Consultoria;15;Arthur Gabriel Silva;2154005;1913094;11/11/2023;01/10/2025;1
+46;Desenvolvimento de software;53;Nathan Peixoto;2296269;1851070;11/07/2024;05/01/2025;2
+47;Desenvolvimento de software;47;Alexia Marques;2244161;1921435;26/07/2024;12/03/2025;2
+48;Venda Licenca Software;47;Alexia Marques;2265001;1880763;01/07/2023;01/05/2025;1
+49;Desenvolvimento de software;102;Nathan Peixoto;2374845;1910466;23/06/2023;29/06/2025;1
+50;Venda Licenca Software;53;Nathan Peixoto;2033335;1801450;14/02/2024;24/09/2025;2
+51;Mão-de-Obra Especiaizada;47;Otávio da Luz;2472708;1903570;06/05/2024;31/07/2025;1
+52;Desenvolvimento de software;15;Alexia Marques;2001305;1867410;02/02/2023;17/09/2025;3
+53;Venda Licenca Software;15;Liz Nascimento;2317147;1942118;18/09/2023;07/05/2025;1
+54;Venda Licenca Software;47;Otávio da Luz;2130186;1919952;02/08/2023;17/12/2025;2
+55;Venda Licenca Software;15;Alexia Marques;2334197;1822057;14/08/2023;17/11/2025;3
+56;Consultoria;114;Liz Nascimento;2493186;1832058;24/04/2024;07/12/2025;3
+57;Processamento de dados;47;Otávio da Luz;2344699;1848842;29/08/2024;10/04/2025;2
+58;Processamento de dados;53;Arthur Gabriel Silva;2357856;1884805;19/11/2023;25/01/2025;1
+59;Venda Licenca Software;114;Liz Nascimento;2193393;1856917;26/04/2023;16/12/2025;3
+60;Serviços de migração de infraestrutura;114;Nathan Peixoto;2355920;1975895;10/12/2023;23/09/2025;2
+61;Venda Licenca Software;15;Liz Nascimento;2442598;1821666;19/08/2024;14/02/2025;2
+62;Serviços de migração de infraestrutura;47;Arthur Gabriel Silva;2262365;1965901;08/12/2023;03/11/2025;1
+63;Consultoria;102;Otávio da Luz;2080476;1972200;27/05/2023;01/02/2025;2
+64;Processamento de dados;102;Arthur Gabriel Silva;2011903;1939638;07/05/2023;16/10/2025;2
+65;Serviços de migração de infraestrutura;15;Alexia Marques;2052656;1977406;07/01/2023;21/12/2025;3
+66;Consultoria;53;Arthur Gabriel Silva;2116416;1925302;26/08/2024;17/02/2025;2
+67;Desenvolvimento de software;102;Liz Nascimento;2218846;1907771;06/09/2023;28/04/2025;3
+68;Consultoria;114;Liz Nascimento;2300438;1836564;26/01/2024;14/05/2025;1
+69;Serviços de migração de infraestrutura;47;Liz Nascimento;2214716;1994106;06/12/2023;27/04/2025;2
+70;Desenvolvimento de software;15;Arthur Gabriel Silva;2424398;1847231;06/07/2023;04/02/2025;2
+71;Serviços de migração de infraestrutura;114;Alexia Marques;2012154;1881114;27/08/2023;17/08/2025;1
+72;Serviços de migração de infraestrutura;53;Liz Nascimento;2329207;1859317;09/09/2023;31/05/2025;3
+73;Serviços de migração de infraestrutura;15;Nathan Peixoto;2173211;1848373;08/03/2024;18/02/2025;2
+74;Serviços de migração de infraestrutura;53;Alexia Marques;2305912;1805839;07/08/2024;22/09/2025;1
+75;Serviços de migração de infraestrutura;114;Alexia Marques;2461051;1960798;07/09/2023;19/10/2025;2
+76;Consultoria;47;Arthur Gabriel Silva;2374706;1870336;17/06/2023;15/06/2025;3
+77;Desenvolvimento de software;47;Otávio da Luz;2140875;1816561;10/08/2023;01/12/2025;2
+78;Venda Licenca Software;47;Otávio da Luz;2005684;1914884;28/02/2024;22/11/2025;1
+79;Serviços de migração de infraestrutura;53;Alexia Marques;2456381;1871372;01/03/2024;22/12/2025;1
+80;Processamento de dados;47;Nathan Peixoto;2122775;1919345;19/07/2023;07/05/2025;2
+81;Desenvolvimento de software;15;Liz Nascimento;2135670;1855839;03/04/2024;26/01/2025;2
+82;Serviços de migração de infraestrutura;47;Liz Nascimento;2129423;1974195;17/07/2023;13/03/2025;1
+83;Processamento de dados;53;Alexia Marques;2251688;1808214;15/03/2023;07/06/2025;1
+84;Desenvolvimento de software;102;Alexia Marques;2066578;1967108;24/01/2023;12/09/2025;3
+85;Serviços de migração de infraestrutura;102;Liz Nascimento;2455267;1948656;24/03/2023;14/09/2025;3
+86;Desenvolvimento de software;47;Liz Nascimento;2363740;1986132;11/05/2024;05/12/2025;1
+87;Serviços de migração de infraestrutura;102;Liz Nascimento;2284425;1980032;01/02/2024;07/02/2025;2
+88;Consultoria;15;Arthur Gabriel Silva;2353182;1958184;05/01/2024;17/05/2025;1
+89;Processamento de dados;53;Arthur Gabriel Silva;2387037;1941942;01/07/2024;24/03/2025;3
+90;Consultoria;53;Arthur Gabriel Silva;2224802;1888936;30/08/2024;08/06/2025;3
+91;Desenvolvimento de software;53;Arthur Gabriel Silva;2356562;1951553;30/04/2024;04/08/2025;3
+92;Consultoria;53;Nathan Peixoto;2133235;1999501;13/08/2024;12/08/2025;2
+93;Mão-de-Obra Especiaizada;15;Alexia Marques;2202974;1814325;12/01/2024;12/05/2025;1
+94;Mão-de-Obra Especiaizada;47;Liz Nascimento;2095736;1917889;10/04/2024;05/03/2025;1
+95;Desenvolvimento de software;102;Arthur Gabriel Silva;2468155;1867747;07/06/2023;16/10/2025;2
+96;Venda Licenca Software;114;Liz Nascimento;2074833;1882458;18/02/2023;22/02/2025;2
+97;Serviços de migração de infraestrutura;114;Nathan Peixoto;2298159;1829935;17/04/2024;25/05/2025;1
+98;Desenvolvimento de software;47;Arthur Gabriel Silva;2492732;1891243;16/05/2024;16/03/2025;1
+99;Consultoria;53;Otávio da Luz;2412920;1842476;19/11/2023;01/03/2025;2
+100;Venda Licenca Software;102;Nathan Peixoto;2322435;1952475;25/05/2024;15/08/2025;1
+101;Venda Licenca Software;15;Arthur Gabriel Silva;2373431;1974384;12/07/2023;09/11/2025;1
+102;Mão-de-Obra Especiaizada;102;Liz Nascimento;2193989;1998440;30/10/2023;23/09/2025;1
+103;Consultoria;15;Liz Nascimento;2050431;1828043;17/10/2023;04/02/2025;2
+104;Processamento de dados;114;Nathan Peixoto;2013331;1947439;10/08/2023;20/05/2025;2
+105;Consultoria;15;Arthur Gabriel Silva;2303730;1965527;12/05/2023;12/06/2025;1
+106;Consultoria;114;Arthur Gabriel Silva;2339837;1829962;09/09/2024;05/08/2025;2
+107;Desenvolvimento de software;53;Arthur Gabriel Silva;2419322;1921468;13/04/2023;21/11/2025;3
+108;Serviços de migração de infraestrutura;102;Otávio da Luz;2259531;1933411;09/11/2023;17/12/2025;3
+109;Mão-de-Obra Especiaizada;15;Otávio da Luz;2058570;1979786;19/07/2024;10/01/2025;2
+110;Processamento de dados;53;Liz Nascimento;2015355;1846110;04/04/2023;02/10/2025;2
+111;Venda Licenca Software;114;Arthur Gabriel Silva;2146260;1805614;17/01/2023;26/10/2025;2
+112;Processamento de dados;47;Otávio da Luz;2239574;1969988;04/10/2023;26/12/2025;3
+113;Desenvolvimento de software;53;Alexia Marques;2177782;1825897;29/05/2023;03/11/2025;3
+114;Desenvolvimento de software;15;Nathan Peixoto;2186410;1890443;24/03/2024;11/07/2025;1
+115;Desenvolvimento de software;102;Alexia Marques;2268089;1977753;27/07/2024;27/09/2025;1
+116;Venda Licenca Software;114;Otávio da Luz;2240622;1973280;19/03/2024;29/11/2025;3
+117;Desenvolvimento de software;114;Nathan Peixoto;2012067;1889559;11/06/2023;26/02/2025;2
+118;Venda Licenca Software;102;Nathan Peixoto;2050306;1869384;23/11/2023;08/12/2025;1
+119;Serviços de migração de infraestrutura;47;Nathan Peixoto;2498452;1876945;10/05/2024;12/04/2025;1
+120;Venda Licenca Software;102;Otávio da Luz;2222121;1812571;12/04/2023;21/05/2025;2
+121;Venda Licenca Software;47;Otávio da Luz;2314082;1824665;12/01/2023;04/11/2025;3
+122;Consultoria;114;Alexia Marques;2475933;1956056;12/09/2024;30/07/2025;2
+123;Desenvolvimento de software;114;Liz Nascimento;2165599;1844042;22/01/2023;20/06/2025;2
+124;Processamento de dados;53;Arthur Gabriel Silva;2156600;1894147;06/07/2023;24/06/2025;2
+125;Serviços de migração de infraestrutura;102;Otávio da Luz;2045021;1829338;13/01/2024;11/04/2025;1
+126;Mão-de-Obra Especiaizada;53;Alexia Marques;2041704;1924535;24/10/2023;27/11/2025;1
+127;Mão-de-Obra Especiaizada;47;Liz Nascimento;2469371;1849143;08/12/2023;15/01/2025;3
+128;Desenvolvimento de software;47;Arthur Gabriel Silva;2343901;1934396;13/08/2023;27/06/2025;1
+129;Mão-de-Obra Especiaizada;114;Otávio da Luz;2407346;1919638;04/04/2024;30/06/2025;1
+130;Mão-de-Obra Especiaizada;15;Arthur Gabriel Silva;2344498;1990328;31/08/2024;02/10/2025;1
+131;Consultoria;53;Arthur Gabriel Silva;2433414;1966629;05/07/2024;30/07/2025;3
+132;Mão-de-Obra Especiaizada;15;Nathan Peixoto;2471005;1977228;28/01/2023;20/06/2025;2
+133;Mão-de-Obra Especiaizada;15;Alexia Marques;2431457;1900265;25/08/2024;26/11/2025;2
+134;Venda Licenca Software;47;Nathan Peixoto;2182523;1884165;10/02/2024;13/08/2025;1
+135;Serviços de migração de infraestrutura;114;Liz Nascimento;2462169;1808125;07/11/2023;18/01/2025;1
+136;Processamento de dados;15;Otávio da Luz;2165277;1832068;21/05/2024;22/12/2025;1
+137;Serviços de migração de infraestrutura;47;Alexia Marques;2462510;1850096;24/09/2023;14/10/2025;2
+138;Desenvolvimento de software;47;Arthur Gabriel Silva;2292089;1864235;20/01/2024;27/12/2025;1
+139;Processamento de dados;114;Otávio da Luz;2359615;1872317;02/04/2024;03/05/2025;1
+140;Venda Licenca Software;102;Otávio da Luz;2120763;1877987;30/03/2024;01/10/2025;2
+141;Mão-de-Obra Especiaizada;47;Arthur Gabriel Silva;2048411;1948066;30/03/2023;27/07/2025;1
+142;Serviços de migração de infraestrutura;53;Nathan Peixoto;2248239;1840957;26/11/2023;29/10/2025;3
+143;Serviços de migração de infraestrutura;47;Liz Nascimento;2472884;1998572;06/06/2023;12/05/2025;3
+144;Desenvolvimento de software;53;Alexia Marques;2316721;1806862;23/04/2024;22/04/2025;3
+145;Processamento de dados;114;Otávio da Luz;2362428;1830192;05/10/2023;21/01/2025;3
+146;Serviços de migração de infraestrutura;114;Otávio da Luz;2002704;1963820;15/03/2023;18/10/2025;1
+147;Mão-de-Obra Especiaizada;53;Arthur Gabriel Silva;2140436;1873057;17/05/2023;13/06/2025;3
+148;Mão-de-Obra Especiaizada;47;Nathan Peixoto;2464282;1811140;27/07/2023;15/03/2025;1
+149;Mão-de-Obra Especiaizada;15;Liz Nascimento;2432784;1805933;09/05/2024;14/03/2025;2
+150;Consultoria;53;Alexia Marques;2196327;1803384;10/09/2023;31/12/2024;3
+151;Serviços de migração de infraestrutura;114;Alexia Marques;2429794;1804010;19/02/2023;18/06/2025;1
+152;Mão-de-Obra Especiaizada;102;Alexia Marques;2255270;1897144;18/08/2023;31/01/2025;3
+153;Serviços de migração de infraestrutura;114;Nathan Peixoto;2070876;1932140;20/06/2024;01/11/2025;2
+154;Desenvolvimento de software;15;Otávio da Luz;2293300;1940671;21/06/2023;07/11/2025;1
+155;Serviços de migração de infraestrutura;53;Arthur Gabriel Silva;2490281;1884219;07/01/2023;22/09/2025;2
+156;Processamento de dados;53;Liz Nascimento;2317185;1859650;20/11/2023;31/07/2025;2
+157;Mão-de-Obra Especiaizada;15;Nathan Peixoto;2189462;1884256;30/11/2023;01/05/2025;1
+158;Serviços de migração de infraestrutura;15;Alexia Marques;2314747;1801058;25/03/2024;01/02/2025;3
+159;Venda Licenca Software;47;Alexia Marques;2355272;1891152;16/09/2023;28/03/2025;2
+160;Desenvolvimento de software;15;Nathan Peixoto;2276294;1821541;07/05/2024;15/10/2025;2
+161;Processamento de dados;102;Alexia Marques;2305538;1915759;11/03/2023;24/12/2025;1
+162;Mão-de-Obra Especiaizada;15;Alexia Marques;2044739;1898215;27/05/2023;25/11/2025;3
+163;Serviços de migração de infraestrutura;53;Alexia Marques;2499643;1896674;24/07/2024;09/05/2025;1
+164;Venda Licenca Software;15;Alexia Marques;2180951;1895369;12/03/2023;12/06/2025;3
+165;Desenvolvimento de software;102;Liz Nascimento;2276348;1899129;15/06/2024;31/01/2025;3
+166;Processamento de dados;47;Liz Nascimento;2245769;1973891;24/11/2023;01/04/2025;1
+167;Desenvolvimento de software;114;Otávio da Luz;2009470;1888699;17/06/2023;19/11/2025;2
+168;Venda Licenca Software;47;Liz Nascimento;2484657;1833495;17/08/2024;29/11/2025;2
+169;Mão-de-Obra Especiaizada;15;Otávio da Luz;2144165;1982411;13/03/2024;19/01/2025;1
+170;Venda Licenca Software;53;Otávio da Luz;2046753;1807991;19/03/2024;24/01/2025;2
+171;Venda Licenca Software;15;Otávio da Luz;2452510;1925163;26/08/2023;07/10/2025;1
+172;Desenvolvimento de software;47;Liz Nascimento;2360568;1822332;23/03/2023;18/05/2025;2
+173;Serviços de migração de infraestrutura;53;Nathan Peixoto;2056361;1807831;05/08/2023;07/03/2025;1
+174;Desenvolvimento de software;102;Nathan Peixoto;2339160;1850090;02/05/2023;16/10/2025;1
+175;Serviços de migração de infraestrutura;15;Arthur Gabriel Silva;2060402;1889854;01/08/2024;11/12/2025;2
+176;Desenvolvimento de software;102;Alexia Marques;2164355;1932879;27/08/2023;04/07/2025;2
+177;Consultoria;114;Arthur Gabriel Silva;2349143;1936341;12/04/2024;27/04/2025;2
+178;Venda Licenca Software;53;Arthur Gabriel Silva;2033806;1949844;05/08/2024;02/06/2025;1
+179;Desenvolvimento de software;114;Nathan Peixoto;2147465;1882291;05/10/2023;09/05/2025;2
+180;Mão-de-Obra Especiaizada;15;Arthur Gabriel Silva;2248693;1805469;06/09/2024;13/11/2025;3
+181;Venda Licenca Software;102;Arthur Gabriel Silva;2107901;1917697;04/03/2024;07/10/2025;3
+182;Consultoria;47;Arthur Gabriel Silva;2226545;1910966;21/08/2024;04/02/2025;3
+183;Serviços de migração de infraestrutura;15;Nathan Peixoto;2144722;1876419;24/08/2023;03/09/2025;1
+184;Processamento de dados;102;Alexia Marques;2479485;1938972;10/02/2024;05/07/2025;3
+185;Venda Licenca Software;47;Otávio da Luz;2161727;1948365;30/03/2024;12/04/2025;3
+186;Mão-de-Obra Especiaizada;15;Otávio da Luz;2232493;1861468;31/01/2024;24/08/2025;1
+187;Consultoria;114;Arthur Gabriel Silva;2464095;1915242;31/01/2023;05/05/2025;1
+188;Serviços de migração de infraestrutura;15;Alexia Marques;2233699;1998777;26/01/2024;05/02/2025;2
+189;Serviços de migração de infraestrutura;114;Liz Nascimento;2215621;1980486;26/01/2023;11/12/2025;2
+190;Desenvolvimento de software;114;Nathan Peixoto;2106183;1999540;03/08/2023;09/04/2025;2
+191;Consultoria;47;Nathan Peixoto;2297540;1832161;16/03/2023;26/03/2025;3
+192;Desenvolvimento de software;47;Liz Nascimento;2247594;1975281;08/06/2023;27/04/2025;3
+193;Serviços de migração de infraestrutura;47;Liz Nascimento;2176559;1922932;30/06/2024;08/04/2025;3
+194;Serviços de migração de infraestrutura;114;Alexia Marques;2496132;1901350;16/04/2023;05/02/2025;3
+195;Processamento de dados;15;Liz Nascimento;2375430;1867639;22/02/2024;12/05/2025;3
+196;Serviços de migração de infraestrutura;47;Alexia Marques;2123591;1815740;01/09/2024;07/10/2025;3
+197;Mão-de-Obra Especiaizada;53;Alexia Marques;2277971;1984459;01/10/2023;31/01/2025;3
+198;Consultoria;15;Alexia Marques;2071619;1864362;28/07/2023;10/10/2025;3
+199;Serviços de migração de infraestrutura;15;Otávio da Luz;2147638;1974033;07/01/2023;28/10/2025;2
+200;Mão-de-Obra Especiaizada;114;Arthur Gabriel Silva;2331148;1888804;28/04/2023;11/12/2025;3
+201;Desenvolvimento de software;47;Alexia Marques;2173382;1827055;01/09/2023;03/11/2025;3
+202;Venda Licenca Software;102;Liz Nascimento;2013814;1975167;09/06/2024;13/09/2025;2
+203;Desenvolvimento de software;47;Liz Nascimento;2429780;1943341;07/06/2024;13/01/2025;3
+204;Consultoria;53;Arthur Gabriel Silva;2256560;1859881;26/08/2023;12/11/2025;2
+205;Venda Licenca Software;47;Alexia Marques;2193218;1880624;15/06/2024;26/09/2025;2
+206;Processamento de dados;47;Liz Nascimento;2312838;1895973;11/03/2024;30/04/2025;3
+207;Mão-de-Obra Especiaizada;47;Otávio da Luz;2078943;1826655;10/03/2023;01/09/2025;2
+208;Processamento de dados;53;Liz Nascimento;2464578;1937758;07/10/2023;02/04/2025;2
+209;Serviços de migração de infraestrutura;114;Nathan Peixoto;2380549;1869804;18/07/2024;08/01/2025;3
+210;Venda Licenca Software;47;Arthur Gabriel Silva;2408626;1899696;28/04/2024;03/11/2025;1
+211;Venda Licenca Software;47;Nathan Peixoto;2382937;1991139;01/03/2023;05/11/2025;1
+212;Consultoria;53;Arthur Gabriel Silva;2149472;1970480;21/07/2023;20/09/2025;1
+213;Venda Licenca Software;47;Liz Nascimento;2053142;1809804;05/09/2024;05/05/2025;3
+214;Serviços de migração de infraestrutura;15;Nathan Peixoto;2196657;1994947;13/07/2023;11/06/2025;3
+215;Mão-de-Obra Especiaizada;15;Alexia Marques;2491850;1920015;25/11/2023;24/11/2025;2
+216;Processamento de dados;102;Alexia Marques;2164385;1955711;04/03/2023;04/06/2025;1
+217;Processamento de dados;15;Alexia Marques;2159296;1991302;01/03/2024;08/07/2025;1
+218;Venda Licenca Software;53;Liz Nascimento;2424372;1888306;26/02/2024;01/04/2025;1
+219;Mão-de-Obra Especiaizada;53;Alexia Marques;2116455;1996593;11/09/2023;14/03/2025;3
+220;Processamento de dados;102;Liz Nascimento;2217047;1856689;14/07/2023;07/02/2025;1
+221;Venda Licenca Software;102;Otávio da Luz;2063614;1902644;07/02/2023;09/05/2025;2
+222;Desenvolvimento de software;47;Liz Nascimento;2090086;1816030;15/10/2023;21/11/2025;2
+223;Mão-de-Obra Especiaizada;102;Otávio da Luz;2433668;1974451;03/11/2023;28/02/2025;1
+224;Desenvolvimento de software;47;Alexia Marques;2355818;1803408;20/07/2024;23/10/2025;3
+225;Desenvolvimento de software;53;Alexia Marques;2269699;1885608;27/04/2024;16/04/2025;2
+226;Serviços de migração de infraestrutura;15;Liz Nascimento;2221979;1987635;12/02/2023;10/11/2025;3
+227;Processamento de dados;114;Otávio da Luz;2303006;1894697;21/07/2024;28/12/2025;1
+228;Serviços de migração de infraestrutura;53;Arthur Gabriel Silva;2463981;1958912;05/03/2024;30/08/2025;3
+229;Consultoria;114;Alexia Marques;2365530;1977735;29/03/2024;11/12/2025;2
+230;Consultoria;15;Otávio da Luz;2064212;1981863;27/06/2023;19/09/2025;1
+231;Processamento de dados;15;Nathan Peixoto;2165641;1966531;24/02/2023;11/11/2025;1
+232;Desenvolvimento de software;53;Arthur Gabriel Silva;2355000;1897296;12/07/2023;11/01/2025;3
+233;Venda Licenca Software;47;Arthur Gabriel Silva;2367440;1845733;20/06/2024;17/02/2025;2
+234;Consultoria;102;Liz Nascimento;2394977;1848314;10/09/2024;24/03/2025;3
+235;Processamento de dados;15;Alexia Marques;2082970;1989370;21/11/2023;07/12/2025;3
+236;Venda Licenca Software;102;Liz Nascimento;2461534;1858762;05/07/2024;20/01/2025;3
+237;Venda Licenca Software;114;Alexia Marques;2450193;1888496;16/06/2023;21/02/2025;2
+238;Processamento de dados;47;Otávio da Luz;2056767;1930206;14/09/2024;21/08/2025;1
+239;Desenvolvimento de software;47;Otávio da Luz;2358167;1844958;31/07/2024;10/04/2025;1
+240;Mão-de-Obra Especiaizada;15;Arthur Gabriel Silva;2396487;1860983;09/08/2024;18/07/2025;3
+241;Desenvolvimento de software;102;Arthur Gabriel Silva;2148977;1970011;06/09/2023;21/11/2025;1
+242;Desenvolvimento de software;53;Otávio da Luz;2490225;1922236;05/04/2023;28/07/2025;3
+243;Mão-de-Obra Especiaizada;15;Alexia Marques;2148271;1813482;15/02/2024;20/04/2025;3
+244;Serviços de migração de infraestrutura;15;Nathan Peixoto;2063065;1860261;12/08/2024;12/09/2025;1
+245;Venda Licenca Software;114;Alexia Marques;2315319;1923228;25/04/2023;26/06/2025;3
+246;Serviços de migração de infraestrutura;15;Alexia Marques;2296952;1883328;25/01/2023;05/10/2025;1
+247;Venda Licenca Software;15;Arthur Gabriel Silva;2347325;1951494;06/07/2024;09/02/2025;2
+248;Venda Licenca Software;114;Alexia Marques;2050307;1926670;12/05/2023;27/11/2025;2
+249;Mão-de-Obra Especiaizada;53;Nathan Peixoto;2455575;1992885;10/05/2024;19/05/2025;2
+250;Mão-de-Obra Especiaizada;47;Liz Nascimento;2120867;1847315;18/09/2023;21/04/2025;2
