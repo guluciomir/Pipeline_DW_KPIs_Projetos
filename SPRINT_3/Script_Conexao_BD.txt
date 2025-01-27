@@ -1,0 +1,20 @@
+-- Query 1, Comparação entre realizado e panejado
+let
+    Fonte = Sql.Database("MCTAB086451:1433", "KPIsProjetos", [Query="select * #(lf)from Fato_projeto_planejado fpp #(lf)FULL OUTER JOIN ( #(lf)SELECT #(lf)fpr.ano_mes_calendario as ano_mes_calendario_realizado,#(lf)fpr.codigo_projeto as codigo_projeto_realizado,#(lf)SUM(fpr.quantidade_horas_trabalhadas * dc.valor_custo_hora) as custo_trabalho_realizado,#(lf)SUM(valor_despesa) as despesas_realizadas,#(lf)SUM((fpr.quantidade_horas_trabalhadas * dc.valor_custo_hora) + fpr.valor_despesa) as custo_total_realizado#(lf)FROM dbo.Fato_projeto_realizado fpr #(lf)INNER JOIN dbo.Dimensao_cargo dc ON (fpr.codigo_cargo = dc.codigo_cargo)#(lf)GROUP BY fpr.ano_mes_calendario, fpr.codigo_projeto#(lf)) as tr #(lf)ON (fpp.ano_mes_calendario = tr.ano_mes_calendario_realizado and fpp.codigo_projeto = tr.codigo_projeto_realizado)"]),
+    #"Coluna Duplicada" = Table.AddColumn(Fonte, "ano_mes_calendario_planejado_realizado", each if [ano_mes_calendario] = null then [ano_mes_calendario_realizado] else [ano_mes_calendario]),
+    #"Personalização Adicionada" = Table.AddColumn(#"Coluna Duplicada", "codigo_projeto_planejado_realizado", each if [codigo_projeto] = null then [codigo_projeto_realizado] else [codigo_projeto]),
+    #"Coluna Personalizada Adicionada" = Table.AddColumn(#"Personalização Adicionada", "ano-mes", each Text.Combine({Text.Start(Text.From([ano_mes_calendario_planejado_realizado], "pt-BR"), 4), "/", Text.Middle(Text.From([ano_mes_calendario_planejado_realizado], "pt-BR"), 4)}), type text)
+in
+    #"Coluna Personalizada Adicionada"
+
+
+
+
+
+-- Query 2, Visões Analíticas da Fato Projeto Realizado
+let
+    Fonte = Sql.Database("MCTAB086451:1433", "KPIsProjetos", [Query="SELECT *#(lf)FROM dbo.Fato_projeto_realizado fpr #(lf)INNER JOIN Dimensao_colaborador dc ON fpr.surrogate_key_colaborador = dc.surrogate_key_colaborador #(lf)INNER JOIN Dimensao_cargo dc2 ON fpr.codigo_cargo = dc2.codigo_cargo #(lf)INNER JOIN Dimensao_cliente dc3 ON fpr.surrogate_key_cliente = dc3.surrogate_key_cliente #(lf)INNER JOIN Dimensao_despesas_projeto ddp ON fpr.surrogate_key_despesa = ddp.surrogate_key_despesa #(lf)INNER JOIN Dimensao_projeto dp ON fpr.codigo_projeto = dp.codigo_projeto #(lf)INNER JOIN Dimensao_segmento_mercado dsm ON fpr.surrogate_key_segmento_mercado = dsm.surrogate_key_segmento_mercado #(lf)"]),
+    #"Personalização Adicionada" = Table.AddColumn(Fonte, "valor_custo_colaborador", each [quantidade_horas_trabalhadas] * [valor_custo_hora]),
+    #"Tipo Alterado" = Table.TransformColumnTypes(#"Personalização Adicionada",{{"valor_custo_colaborador", type number}})
+in
+    #"Tipo Alterado"

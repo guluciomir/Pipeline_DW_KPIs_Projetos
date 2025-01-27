@@ -1,0 +1,1 @@
+Valor Colaborador + Despesa = SUM(Query2[valor_custo_colaborador]) + SUM(Query2[valor_despesa]) 

@@ -1,0 +1,10 @@
+-- Coluna com os dados unificados de Ano-mês planejado x realizado
+= Table.AddColumn(Fonte, "ano_mes_calendario_planejado_realizado", each if [ano_mes_calendario] = null then [ano_mes_calendario_realizado] else [ano_mes_calendario])
+
+
+-- Coluna com os dados unificados de código projeto planejado x realizado
+= Table.AddColumn(#"Coluna Duplicada", "codigo_projeto_planejado_realizado", each if [codigo_projeto] = null then [codigo_projeto_realizado] else [codigo_projeto])
+
+
+-- Criação de coluna de data no formato YYYY/MM
+= Table.AddColumn(#"Personalização Adicionada", "ano-mes", each Text.Combine({Text.Start(Text.From([ano_mes_calendario_planejado_realizado], "pt-BR"), 4), "/", Text.Middle(Text.From([ano_mes_calendario_planejado_realizado], "pt-BR"), 4)}), type text)
